@@ -9,18 +9,19 @@
 
 /* === TOKENS === */
 :root {
-  --bg:          #0c0b09;
-  --surface:     #141210;
-  --surface-2:   #1c1a16;
-  --text:        #ede8e1;
-  --muted:       #58544f;
-  --dim:         #302e2b;
-  --accent:      #c49a5a;
-  --accent-glow: rgba(196,154,90,.12);
-  --border:      #1e1c19;
-  --border-2:    #2a2722;
+  --bg:          #fafafa;
+  --surface:     #f2f0eb;
+  --surface-2:   #eae8e3;
+  --text:        #111111;
+  --muted:       #666666;
+  --dim:         #aaaaaa;
+  --accent:      #111111;
+  --accent-glow: rgba(0,0,0,.04);
+  --border:      #e5e5e5;
+  --border-2:    #cccccc;
 
-  --display: 'Fraunces', serif;
+  --display: 'Bebas Neue', sans-serif;
+  --serif:   'Fraunces', serif;
   --body:    'Instrument Sans', sans-serif;
   --mono:    'IBM Plex Mono', monospace;
 
@@ -107,7 +108,7 @@ nav {
   border-bottom: 1px solid transparent;
 }
 nav.scrolled {
-  background: rgba(12,11,9,.88);
+  background: rgba(250,250,250,.94);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-bottom-color: var(--border);
@@ -119,15 +120,15 @@ nav.scrolled {
 }
 
 .nav-name {
-  font-family: var(--display);
+  font-family: var(--serif);
   font-size: 1.0625rem;
   font-weight: 400;
   font-style: italic;
   letter-spacing: -.01em;
   color: var(--text);
-  transition: color .2s;
+  transition: opacity .2s;
 }
-.nav-name:hover { color: var(--accent); }
+.nav-name:hover { opacity: .6; }
 
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
 .nav-links a {
@@ -157,7 +158,7 @@ nav.scrolled {
   font-size: .625rem;
   text-transform: uppercase;
   letter-spacing: .18em;
-  color: var(--accent);
+  color: var(--muted);
   margin-bottom: 3rem;
   opacity: 0;
   animation: fadeUp .7s var(--snap) .1s forwards;
@@ -182,7 +183,7 @@ nav.scrolled {
 .hero-line:nth-child(1) .hero-inner { animation-delay: .18s; }
 .hero-line:nth-child(2) .hero-inner { animation-delay: .32s; }
 
-.hero-line em { font-style: italic; color: var(--accent); }
+.hero-line em { font-style: italic; font-family: var(--serif); font-weight: 300; color: var(--muted); font-size: .92em; }
 
 .hero-bottom {
   display: flex;
@@ -333,19 +334,19 @@ nav.scrolled {
 .card-img img {
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: brightness(.65) saturate(.75);
+  filter: brightness(.9) saturate(.85);
   transition: transform .9s var(--ease), filter .5s var(--ease);
 }
 .project-card:hover .card-img img {
   transform: scale(1.06);
-  filter: brightness(.88) saturate(1);
+  filter: brightness(1) saturate(1);
 }
 
 /* Gradient over image */
 .card-img::after {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(12,11,9,.92) 0%, rgba(12,11,9,.3) 40%, transparent 70%);
+  background: linear-gradient(to top, rgba(0,0,0,.88) 0%, rgba(0,0,0,.28) 45%, transparent 70%);
   pointer-events: none;
 }
 
@@ -450,7 +451,7 @@ footer {
 .case-hero::after {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(12,11,9,.75) 0%, transparent 55%);
+  background: linear-gradient(to top, rgba(0,0,0,.68) 0%, transparent 55%);
 }
 
 /* Case wrap */
@@ -556,7 +557,7 @@ footer {
   font-style: italic;
 }
 .case-quote p {
-  font-family: var(--display);
+  font-family: var(--serif);
   font-size: clamp(1.3rem, 2.8vw, 1.9rem);
   font-weight: 300;
   font-style: italic;
@@ -574,10 +575,10 @@ footer {
 .case-img-full img {
   width: 100%; max-height: 88vh;
   object-fit: cover;
-  filter: brightness(.8) saturate(.85);
+  filter: brightness(.96) saturate(.92);
   transition: filter .5s;
 }
-.case-img-full:hover img { filter: brightness(.95) saturate(1); }
+.case-img-full:hover img { filter: brightness(1) saturate(1); }
 
 /* 2-col images */
 .case-img-2col {
@@ -599,12 +600,12 @@ footer {
 .case-img-2col img,
 .case-img-3col img {
   width: 100%; aspect-ratio: 4/3; object-fit: cover;
-  filter: brightness(.75) saturate(.8);
+  filter: brightness(.92) saturate(.88);
   transition: filter .4s, transform .5s var(--ease);
 }
 .case-img-2col > div:hover img,
 .case-img-3col > div:hover img {
-  filter: brightness(.95) saturate(1);
+  filter: brightness(1) saturate(1);
   transform: scale(1.03);
 }
 
@@ -630,11 +631,11 @@ footer {
 .case-process-grid img {
   width: 100%; aspect-ratio: 1; object-fit: cover;
   background: var(--surface);
-  filter: brightness(.65) saturate(.65);
+  filter: brightness(.9) saturate(.85);
   transition: filter .4s, transform .5s var(--ease);
 }
 .case-process-grid img:hover {
-  filter: brightness(.92) saturate(1);
+  filter: brightness(1) saturate(1);
   transform: scale(1.04);
 }
 
@@ -680,7 +681,7 @@ footer {
   aspect-ratio: 4/5; object-fit: cover;
   background: var(--surface);
   margin-bottom: 4.5rem;
-  filter: brightness(.78) saturate(.7) sepia(.15);
+  filter: brightness(.95) saturate(.88) sepia(.06);
 }
 .about-wrap h1 {
   font-family: var(--display);
@@ -691,7 +692,7 @@ footer {
   color: var(--text);
   margin-bottom: 2.5rem;
 }
-.about-wrap h1 em { font-style: italic; color: var(--accent); }
+.about-wrap h1 em { font-style: italic; font-family: var(--serif); font-weight: 300; color: var(--muted); font-size: .9em; }
 
 .about-body p { font-size: 1rem; line-height: 1.88; color: var(--text); margin-bottom: 1.25rem; }
 .about-body p:last-child { margin-bottom: 0; }
@@ -861,6 +862,131 @@ footer {
 }
 
 /* ============================================================
+   PROCESS FLOW STRIP  (homepage — replaces skills marquee)
+   ============================================================ */
+.process-flow {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 2.5rem;
+  background: var(--surface);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.process-flow-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--site-w);
+  margin: 0 auto;
+  gap: 0;
+}
+.pf-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem 1.5rem;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+  background: var(--bg);
+}
+.pf-num {
+  font-family: var(--display);
+  font-size: 1.375rem;
+  line-height: 1;
+  color: var(--text);
+  letter-spacing: .04em;
+}
+.pf-label {
+  font-family: var(--mono);
+  font-size: .45rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--muted);
+  margin-top: .25rem;
+  white-space: nowrap;
+}
+.pf-arrow {
+  font-family: var(--mono);
+  font-size: .5rem;
+  color: var(--dim);
+  padding: 0 .75rem;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   CASE STUDY — PROCESS FLOW HEADER
+   ============================================================ */
+.case-flow {
+  padding: 1.5rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--surface);
+}
+.cf-step {
+  font-family: var(--mono);
+  font-size: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--muted);
+  padding: .375rem .75rem;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cf-arr {
+  font-family: var(--mono);
+  font-size: .5rem;
+  color: var(--dim);
+  padding: 0 .35rem;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   CASE STUDY — STAT CALLOUTS  (KNOT: $193B, 4 makers, 6 connectors)
+   ============================================================ */
+.case-stats {
+  max-width: var(--text-w);
+  margin: 2.5rem auto 0;
+  padding: 0 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+.stat-item {
+  background: var(--bg);
+  padding: 1.5rem 1.25rem;
+}
+.stat-num {
+  font-family: var(--display);
+  font-size: clamp(1.75rem, 3.5vw, 2.625rem);
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: .03em;
+}
+.stat-label {
+  font-family: var(--mono);
+  font-size: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--muted);
+  margin-top: .5rem;
+  line-height: 1.5;
+}
+.stat-desc {
+  font-size: .75rem;
+  color: var(--dim);
+  margin-top: .35rem;
+  line-height: 1.5;
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 960px) {
@@ -885,7 +1011,15 @@ footer {
   footer { padding: 1.75rem 1.5rem; }
 }
 
+@media (max-width: 960px) {
+  .process-flow { padding: 1rem 1.5rem; }
+  .process-flow-inner { justify-content: flex-start; }
+  .case-flow { padding: 1.25rem 1.5rem; justify-content: flex-start; }
+  .case-stats { margin: 2rem 1.5rem 0; padding: 0; }
+}
+
 @media (max-width: 580px) {
+  .case-stats { grid-template-columns: 1fr; }
   html { cursor: auto; }
   .cursor, .cursor-dot { display: none; }
 
