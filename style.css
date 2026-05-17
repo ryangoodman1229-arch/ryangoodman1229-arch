@@ -120,10 +120,10 @@ nav.scrolled {
 }
 
 .nav-name {
-  font-family: var(--body);
+  font-family: var(--display);
   font-size: 1.0625rem;
-  font-weight: 500;
-  letter-spacing: -.01em;
+  font-style: normal;
+  letter-spacing: .04em;
   color: var(--text);
   transition: opacity .2s;
 }
@@ -182,7 +182,7 @@ nav.scrolled {
 .hero-line:nth-child(1) .hero-inner { animation-delay: .18s; }
 .hero-line:nth-child(2) .hero-inner { animation-delay: .32s; }
 
-.hero-line em { color: var(--muted); font-style: normal; }
+.hero-line em { font-family: var(--display); font-style: normal; color: var(--muted); }
 
 .hero-bottom {
   display: flex;
@@ -687,7 +687,7 @@ footer {
   color: var(--text);
   margin-bottom: 2.5rem;
 }
-.about-wrap h1 em { color: var(--muted); font-style: normal; }
+.about-wrap h1 em { font-family: var(--display); font-style: normal; color: var(--muted); }
 
 .about-body p { font-size: 1rem; line-height: 1.88; color: var(--text); margin-bottom: 1.25rem; }
 .about-body p:last-child { margin-bottom: 0; }
