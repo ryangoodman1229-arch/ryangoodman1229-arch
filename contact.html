@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Ryan Goodman</title>
+  <meta name="description" content="Get in touch with Ryan Goodman — industrial designer, Columbus OH.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-name">Ryan Goodman</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="contact-wrap">
+
+    <h1 class="reveal">Let's talk.</h1>
+    <p class="contact-intro reveal reveal-d1">Seeking Fall 2026 co-op and entry-level roles in Columbus, OH. Open to the right opportunity.</p>
+
+    <!-- Direct links -->
+    <div class="contact-direct reveal reveal-d2">
+      <div class="contact-blk-label">Direct</div>
+      <a href="mailto:ryangoodman1229@gmail.com" class="contact-link">
+        ryangoodman1229@gmail.com
+        <span class="contact-link-arr">↗</span>
+      </a>
+      <a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener" class="contact-link">
+        linkedin.com/in/ryan-goodman-design
+        <span class="contact-link-arr">↗</span>
+      </a>
+      <a href="assets/resume-ryan-goodman.pdf" target="_blank" class="contact-link">
+        Resume (PDF)
+        <span class="contact-link-arr">↗</span>
+      </a>
+    </div>
+
+    <!-- Form -->
+    <div class="reveal reveal-d3">
+      <div class="contact-blk-label">Send a message</div>
+      <!--
+        Formspree backend — free tier (50 msg/month).
+        1. Sign up at formspree.io
+        2. Create a form → copy your form ID
+        3. Replace YOUR_FORM_ID below
+      -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-field">
+          <label class="form-label" for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-left">© 2026 Ryan Goodman</span>
+      <ul class="footer-links">
+        <li><a href="mailto:ryangoodman1229@gmail.com">Email</a></li>
+        <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="assets/resume-ryan-goodman.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
