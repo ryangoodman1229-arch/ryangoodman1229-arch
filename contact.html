@@ -15,78 +15,141 @@
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
 
-  <nav>
+  <!-- Nav -->
+  <nav class="top-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-name">Ryan Goodman</a>
+      <a href="index.html" class="nav-name">
+        <span class="nav-name-dot"></span>
+        Ryan Goodman
+      </a>
       <ul class="nav-links">
         <li><a href="index.html">Work</a></li>
         <li><a href="collaborations.html">Collaborations</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
-  <div class="contact-wrap">
-
-    <h1 class="reveal">Let's talk.</h1>
-    <p class="contact-intro reveal reveal-d1">Seeking Fall 2026 co-op and entry-level roles in Columbus, OH. Open to the right opportunity.</p>
-
-    <!-- Direct links -->
-    <div class="contact-direct reveal reveal-d2">
-      <div class="contact-blk-label">Direct</div>
-      <a href="mailto:ryangoodman1229@gmail.com" class="contact-link">
-        ryangoodman1229@gmail.com
-        <span class="contact-link-arr">↗</span>
-      </a>
-      <a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener" class="contact-link">
-        linkedin.com/in/ryan-goodman-design
-        <span class="contact-link-arr">↗</span>
-      </a>
-      <a href="assets/resume-ryan-goodman.pdf" target="_blank" class="contact-link">
-        Resume (PDF)
-        <span class="contact-link-arr">↗</span>
-      </a>
-    </div>
-
-    <!-- Form -->
-    <div class="reveal reveal-d3">
-      <div class="contact-blk-label">Send a message</div>
-      <!--
-        Formspree backend — free tier (50 msg/month).
-        1. Sign up at formspree.io
-        2. Create a form → copy your form ID
-        3. Replace YOUR_FORM_ID below
-      -->
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div class="form-field">
-          <label class="form-label" for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="form-field">
-          <label class="form-label" for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="your@email.com" required>
-        </div>
-        <div class="form-field">
-          <label class="form-label" for="message">Message</label>
-          <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
-        </div>
-        <div>
-          <button type="submit" class="btn">Send Message</button>
-        </div>
-      </form>
-    </div>
-
+  <!-- Mobile nav panel -->
+  <div class="nav-mobile-panel">
+    <ul>
+      <li><a href="index.html"><em>01</em>Work</a></li>
+      <li><a href="collaborations.html"><em>02</em>Collaborations</a></li>
+      <li><a href="about.html"><em>03</em>About</a></li>
+      <li><a href="contact.html"><em>04</em>Contact</a></li>
+    </ul>
   </div>
 
-  <footer>
+  <div class="contact-wrap">
+
+    <div class="contact-grid">
+
+      <!-- Left: label, headline, intro, direct links -->
+      <div class="reveal">
+        <div class="about-label" style="margin-bottom:2rem">Contact — 04 / 04</div>
+        <h1>LET'S<br><em><span class="accent">TALK.</span></em></h1>
+
+        <p class="contact-intro">
+          Looking for a Fall 2026 co-op or entry-level role. Open to relocation if the work is right.
+          Always happy to talk shop — fabrication, hybrid production, joinery, anything tactile.
+        </p>
+
+        <div class="contact-direct">
+          <div class="contact-blk-label">Direct</div>
+          <a href="mailto:ryangoodman1229@gmail.com" class="contact-link">
+            <span><span class="contact-link-meta">01</span>ryangoodman1229@gmail.com</span>
+            <span class="contact-link-arr">↗</span>
+          </a>
+          <a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener" class="contact-link">
+            <span><span class="contact-link-meta">02</span>LinkedIn — ryan-goodman-design</span>
+            <span class="contact-link-arr">↗</span>
+          </a>
+          <a href="assets/resume-ryan-goodman.pdf" target="_blank" class="contact-link">
+            <span><span class="contact-link-meta">03</span>Resume / PDF</span>
+            <span class="contact-link-arr">↗</span>
+          </a>
+          <a href="https://github.com/ryangoodman1229-arch" target="_blank" rel="noopener" class="contact-link">
+            <span><span class="contact-link-meta">04</span>GitHub — ryangoodman1229-arch</span>
+            <span class="contact-link-arr">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="reveal reveal-d1">
+        <div class="contact-blk-label">Send a Message</div>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-field">
+            <label class="form-label" for="name">01 — Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="email">02 — Email</label>
+            <input type="email" id="email" name="email" placeholder="you@studio.com" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="company">03 — Company / Studio</label>
+            <input type="text" id="company" name="company" placeholder="Optional">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="message">04 — Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about the role, the brief, or whatever else." required></textarea>
+          </div>
+          <button type="submit" class="btn primary" style="align-self:flex-start">Send Message →</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="footer-inner">
-      <span class="footer-left">© 2026 Ryan Goodman</span>
-      <ul class="footer-links">
-        <li><a href="mailto:ryangoodman1229@gmail.com">Email</a></li>
-        <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="assets/resume-ryan-goodman.pdf" target="_blank">Resume</a></li>
-      </ul>
+      <div>
+        <div class="footer-mark">
+          I design it.<br>
+          <em>I build it.</em>
+        </div>
+        <div class="footer-sub">
+          Industrial designer · Columbus, OH. Seeking Fall 2026 co-op &amp; entry-level roles.
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Index</div>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="collaborations.html">Collaborations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Direct</div>
+        <ul>
+          <li><a href="mailto:ryangoodman1229@gmail.com">Email <span class="ext">↗</span></a></li>
+          <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn <span class="ext">↗</span></a></li>
+          <li><a href="assets/resume-ryan-goodman.pdf" target="_blank">Resume / PDF <span class="ext">↗</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Practice</div>
+        <ul>
+          <li>SolidWorks</li>
+          <li>KeyShot · GendoAI</li>
+          <li>CNC · 3D Printing</li>
+          <li>Rapid Prototyping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ryan Goodman · Columbus, OH</span>
+      <span class="availability"><span class="pulse"></span> Available · Fall 2026</span>
+      <span>v.2026.05 — Rebuild</span>
     </div>
   </footer>
 

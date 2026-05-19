@@ -17,42 +17,60 @@
   <div class="cursor-dot" aria-hidden="true"></div>
 
   <!-- Nav -->
-  <nav>
+  <nav class="top-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-name">Ryan Goodman</a>
+      <a href="index.html" class="nav-name">
+        <span class="nav-name-dot"></span>
+        Ryan Goodman
+      </a>
       <ul class="nav-links">
         <li><a href="index.html">Work</a></li>
         <li><a href="collaborations.html" class="active">Collaborations</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- Section label -->
-  <div class="section-label reveal" style="padding-top: calc(var(--nav-h) + 4rem);">
-    <span class="section-label-dot"></span>
-    <span class="section-label-text">Collaborations</span>
+  <!-- Mobile nav panel -->
+  <div class="nav-mobile-panel">
+    <ul>
+      <li><a href="index.html"><em>01</em>Work</a></li>
+      <li><a href="collaborations.html"><em>02</em>Collaborations</a></li>
+      <li><a href="about.html"><em>03</em>About</a></li>
+      <li><a href="contact.html"><em>04</em>Contact</a></li>
+    </ul>
   </div>
 
-  <!-- Intro -->
   <div class="collab-wrap">
-    <p class="collab-intro reveal">Volunteer and collaborative design work alongside external organizations and industry mentors.</p>
-  </div>
 
-  <!-- Collaborations grid -->
-  <div class="collab-wrap reveal reveal-d1">
-    <div class="collab-grid">
+    <div class="reveal">
+      <div class="about-label" style="margin-bottom:2rem">Collaborations — 02 / 04</div>
+      <h1>WITH <em><span class="accent">/<br>OTHERS.</span></em></h1>
+      <p class="collab-intro">
+        Volunteer, pro-bono, and industry-mentor projects — places where the design and the build
+        had to happen with other people in the room, and where the constraint was usually real-world cost, not aesthetics.
+      </p>
+    </div>
 
-      <!-- 01 Form 5 COFAB -->
-      <a href="projects/form5-cofab.html" class="project-card c-form5">
+    <div class="collab-grid reveal reveal-d1">
+
+      <!-- A · FORM 5 / COFAB -->
+      <a href="projects/form5-cofab.html" class="project-card style-fill c-form5">
         <div class="card-img">
-          <img src="assets/images/form5-cofab/hero.jpg" alt="Form 5 COFAB — low-cost prosthetic design">
+          <div class="placeholder">Form 5 COFAB — prosthetic</div>
         </div>
+        <span class="card-status">Industry Mentor</span>
         <div class="card-label">
-          <span class="card-num">01</span>
-          <h2>Form 5 COFAB</h2>
-          <p>Low-Cost Prosthetic Design</p>
+          <span class="card-num">A · 2024–25</span>
+          <h2>FORM 5 / COFAB</h2>
+          <div class="card-meta">
+            <span>Low-cost prosthetic</span><span>Industry mentor</span><span>CCAD</span>
+          </div>
         </div>
         <div class="card-arrow" aria-hidden="true">
           <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -61,15 +79,18 @@
         </div>
       </a>
 
-      <!-- 02 Dress for Success -->
-      <a href="projects/dress-for-success.html" class="project-card c-dress">
+      <!-- B · DRESS FOR SUCCESS -->
+      <a href="projects/dress-for-success.html" class="project-card style-fill c-dress">
         <div class="card-img">
-          <img src="assets/images/dress-for-success/hero.jpg" alt="Dress for Success — service design research">
+          <div class="placeholder">Dress for Success</div>
         </div>
+        <span class="card-status" style="background:var(--text)">Pro-bono</span>
         <div class="card-label">
-          <span class="card-num">02</span>
-          <h2>Dress for Success</h2>
-          <p>Service Design Research</p>
+          <span class="card-num">B · 2024</span>
+          <h2>DRESS FOR SUCCESS</h2>
+          <div class="card-meta">
+            <span>Service design</span><span>Volunteer</span><span>Columbus</span>
+          </div>
         </div>
         <div class="card-arrow" aria-hidden="true">
           <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -79,17 +100,61 @@
       </a>
 
     </div>
+
+    <!-- CTA block -->
+    <div class="collab-cta reveal">
+      <p>
+        Open to volunteer, mentorship, and pro-bono briefs — particularly with Columbus-area makers,
+        nonprofits, and accessibility-focused organizations.
+      </p>
+      <a href="contact.html" class="collab-cta-btn">Get in touch →</a>
+    </div>
+
   </div>
 
   <!-- Footer -->
-  <footer>
+  <footer class="site-footer">
     <div class="footer-inner">
-      <span class="footer-left">© 2026 Ryan Goodman</span>
-      <ul class="footer-links">
-        <li><a href="mailto:ryangoodman1229@gmail.com">Email</a></li>
-        <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="assets/resume-ryan-goodman.pdf" target="_blank">Resume</a></li>
-      </ul>
+      <div>
+        <div class="footer-mark">
+          I design it.<br>
+          <em>I build it.</em>
+        </div>
+        <div class="footer-sub">
+          Industrial designer · Columbus, OH. Seeking Fall 2026 co-op &amp; entry-level roles.
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Index</div>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="collaborations.html">Collaborations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Direct</div>
+        <ul>
+          <li><a href="mailto:ryangoodman1229@gmail.com">Email <span class="ext">↗</span></a></li>
+          <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn <span class="ext">↗</span></a></li>
+          <li><a href="assets/resume-ryan-goodman.pdf" target="_blank">Resume / PDF <span class="ext">↗</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Practice</div>
+        <ul>
+          <li>SolidWorks</li>
+          <li>KeyShot · GendoAI</li>
+          <li>CNC · 3D Printing</li>
+          <li>Rapid Prototyping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ryan Goodman · Columbus, OH</span>
+      <span class="availability"><span class="pulse"></span> Available · Fall 2026</span>
+      <span>v.2026.05 — Rebuild</span>
     </div>
   </footer>
 

@@ -15,67 +15,71 @@
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
 
-  <nav>
+  <!-- Nav -->
+  <nav class="top-nav">
     <div class="nav-inner">
-      <a href="../index.html" class="nav-name">Ryan Goodman</a>
+      <a href="../index.html" class="nav-name">
+        <span class="nav-name-dot"></span>
+        Ryan Goodman
+      </a>
       <ul class="nav-links">
         <li><a href="../index.html" class="active">Work</a></li>
         <li><a href="../collaborations.html">Collaborations</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../contact.html">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
+  <!-- Mobile nav panel -->
+  <div class="nav-mobile-panel">
+    <ul>
+      <li><a href="../index.html"><em>01</em>Work</a></li>
+      <li><a href="../collaborations.html"><em>02</em>Collaborations</a></li>
+      <li><a href="../about.html"><em>03</em>About</a></li>
+      <li><a href="../contact.html"><em>04</em>Contact</a></li>
+    </ul>
+  </div>
+
   <div class="case-wrap">
 
-    <!-- Hero -->
+    <!-- Case hero -->
     <div class="case-hero">
-      <img src="../assets/images/knot/hero.jpg" alt="KNOT — walnut modular chair system, studio render">
+      <img src="../assets/images/knot/hero.jpg" alt="KNOT — modular chair system, studio render">
+      <div class="case-hero-overlay">
+        <div>
+          <div class="hero-num">Project 01 / 07 · BFA Capstone</div>
+          <h1 class="hero-title-big">KNOT<em>.</em></h1>
+        </div>
+        <div class="hero-side">
+          Modular chair system<br>
+          Walnut · Steel<br>
+          Dec 2025 → May 2026<br>
+          CCAD · Columbus, OH
+        </div>
+      </div>
     </div>
 
-    <!-- Process flow -->
-    <div class="case-flow reveal">
-      <div class="cf-step">01 — Industry Research</div>
-      <span class="cf-arr">→</span>
-      <div class="cf-step">02 — Maker Interviews</div>
-      <span class="cf-arr">→</span>
-      <div class="cf-step">03 — Design Criteria</div>
-      <span class="cf-arr">→</span>
-      <div class="cf-step">04 — Connector Ideation</div>
-      <span class="cf-arr">→</span>
-      <div class="cf-step">05 — Prototype Testing</div>
-      <span class="cf-arr">→</span>
-      <div class="cf-step">06 — Final System</div>
-    </div>
-
-    <!-- Title -->
+    <!-- Case header -->
     <div class="case-header reveal">
-      <h1>KNOT</h1>
-      <p class="case-tagline">Built to fix the joinery problem that keeps hybrid furniture production from scaling.</p>
+      <p class="case-tagline">
+        Built to fix the joinery problem that keeps hybrid furniture production from scaling.
+      </p>
     </div>
 
-    <!-- Meta -->
+    <!-- Case meta -->
     <div class="case-meta reveal">
-      <div class="meta-row">
-        <span class="meta-label">Role</span>
-        <span class="meta-value">Industrial Design Student · BFA Capstone, CCAD</span>
-      </div>
-      <div class="meta-row">
-        <span class="meta-label">Timeline</span>
-        <span class="meta-value">December 2025 (Research) → Spring 2026 (Design + Prototyping)</span>
-      </div>
-      <div class="meta-row">
-        <span class="meta-label">Tools</span>
-        <span class="meta-value">SolidWorks · KeyShot · GendoAI · 3D Printing</span>
-      </div>
-      <div class="meta-row">
-        <span class="meta-label">Context</span>
-        <span class="meta-value">Solo capstone; field research with Columbus-area furniture makers</span>
-      </div>
+      <div class="meta-row"><span class="meta-label">Role</span><span class="meta-value">Industrial Design Student · BFA Capstone, CCAD</span></div>
+      <div class="meta-row"><span class="meta-label">Timeline</span><span class="meta-value">Dec 2025 (Research) → Spring 2026 (Design + Prototyping)</span></div>
+      <div class="meta-row"><span class="meta-label">Tools</span><span class="meta-value">SolidWorks · KeyShot · GendoAI · 3D Printing</span></div>
+      <div class="meta-row"><span class="meta-label">Context</span><span class="meta-value">Solo capstone; field research with Columbus-area furniture makers</span></div>
     </div>
 
-    <!-- Stats -->
+    <!-- Case stats -->
     <div class="case-stats reveal">
       <div class="stat-item">
         <div class="stat-num">$193B</div>
@@ -90,271 +94,562 @@
       <div class="stat-item">
         <div class="stat-num">~5</div>
         <div class="stat-label">Connector Strategies Tested</div>
-        <div class="stat-desc">Dovetail-inspired geometry selected — best strength, CNC compatibility, and customization</div>
+        <div class="stat-desc">Dovetail-inspired bracket selected — strength, CNC compatibility, customization</div>
       </div>
     </div>
 
-    <!-- DISCOVER -->
-    <div class="section-label reveal">
-      <div class="section-label-dot"></div>
-      <span class="section-label-text">Discover</span>
-    </div>
+    <!-- Chapter layout: sticky rail + content -->
+    <div class="chapter-layout">
 
-    <div class="case-section reveal">
-      <h2>Industry Research</h2>
-      <p>Before designing anything, I spent a semester mapping the furniture industry. The US market is a $193B landscape broken into four tiers: Mass-Market, Mid-Market, Boutique Craft, and Hybrid Custom. Most furniture lives at the extremes — cheap and scalable, or handcrafted and expensive. The hybrid-custom segment sits at roughly 10% of the market, but research showed it's the least served and sits at the sweet spot across five axes: Craftsmanship · Cost · Output · Customization · Sustainability.</p>
-    </div>
+      <aside class="chapter-rail">
+        <div class="chapter-rail-title">Case Study · 04 Chapters</div>
+        <ul class="chapter-list">
+          <li class="active" data-ch="discover" data-cursor="pointer">
+            <span class="ch-num">01</span><span>Discover</span>
+          </li>
+          <li data-ch="define" data-cursor="pointer">
+            <span class="ch-num">02</span><span>Define</span>
+          </li>
+          <li data-ch="develop" data-cursor="pointer">
+            <span class="ch-num">03</span><span>Develop</span>
+          </li>
+          <li data-ch="deliver" data-cursor="pointer">
+            <span class="ch-num">04</span><span>Deliver</span>
+          </li>
+        </ul>
+      </aside>
 
-    <div class="case-img-full reveal">
-      <img src="../assets/images/knot/research-spectrum.jpg" alt="Five-axis opportunity spectrum — hybrid-custom at the intersection of craftsmanship, cost, output, customization, and sustainability">
-      <p class="caption">Five-axis opportunity spectrum — hybrid-custom sits at the underserved intersection</p>
-    </div>
+      <div class="chapter-content">
 
-    <div class="case-section reveal">
-      <h2>Maker Interviews</h2>
-      <p>I conducted site visits and interviews with Columbus-area furniture makers to understand what hybrid production actually looks like in practice. The deepest case study was <strong>A Carpenter's Son Design Co.</strong> — a Columbus hybrid fabricator that started selling cutting boards as a fundraiser and grew into heirloom furniture. Their workflow: Design Proposal → Fabrication (4 fabricators, 1 piece per maker) → Finishing (2 finishers on every piece) → Onsite Install. No automation, but technology used selectively to improve workflow without sacrificing craft.</p>
-      <p>Interviews: Josh Scheutzow (Founder) · Brad Hosfeld (Lead Designer) · Cain Lackey (Shop Manager) · Ellen Vail (Project Coordinator) — A Carpenter's Son Design Co.; also Hazelwood Millworks · Columbus Furniture Company · MRO Built.</p>
-    </div>
-
-    <div class="case-img-full reveal">
-      <img src="../assets/images/knot/research-shop.jpg" alt="A Carpenter's Son Design Co. shop, Columbus OH — primary field research site">
-      <p class="caption">A Carpenter's Son Design Co., Columbus OH — primary case study for hybrid production workflow</p>
-    </div>
-
-    <!-- Pullquote -->
-    <div class="case-quote reveal">
-      <p>The connector strategy didn't come from aesthetics — it came from understanding exactly where hybrid production breaks down.</p>
-    </div>
-
-    <!-- DEFINE -->
-    <div class="section-label reveal">
-      <div class="section-label-dot"></div>
-      <span class="section-label-text">Define</span>
-    </div>
-
-    <div class="case-section reveal">
-      <h2>Design Criteria</h2>
-      <p>The research surfaced a consistent theme: the thing that kills lead time in hybrid production isn't the woodworking — it's the joinery. Complex manual joints require skilled labor, slow fabrication, and can't be repeated on a CNC without losing the craft feel hybrid buyers pay for.</p>
-      <p>That became the design brief: a connection system that is strong, repeatable, tool-minimal, and CNC-compatible — without sacrificing the solid wood material that defines this market.</p>
-    </div>
-
-    <!-- Criteria mapping table -->
-    <div class="criteria-table reveal">
-      <div class="criteria-table-inner">
-
-        <div class="criteria-row">
-          <div class="criteria-cell">
-            <span class="criteria-cell-head">Research Insight</span>
-            <p>Consumers value durability and longevity</p>
+        <!-- ── DISCOVER ── -->
+        <div id="ch-discover">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Discover</span>
+            </div>
+            <span class="section-label-count">01 / 4</span>
           </div>
-          <div class="criteria-cell criteria-cell--right">
-            <span class="criteria-cell-head">Design Requirement</span>
-            <p>Use high-quality solid wood construction</p>
+
+          <div class="case-section reveal">
+            <h2>Industry Research</h2>
+            <p>Before designing anything, I spent a semester mapping the furniture industry. The US market is a $193B landscape broken into four tiers: Mass-Market, Mid-Market, Boutique Craft, and Hybrid Custom. Most furniture lives at the extremes — cheap and scalable, or handcrafted and expensive.</p>
+            <p>The hybrid-custom segment sits at roughly 10% of the market, but research showed it's the least served and sits at the sweet spot across five axes: <strong>Craftsmanship · Cost · Output · Customization · Sustainability</strong>.</p>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Maker Interviews</h2>
+            <p>I conducted site visits and interviews with Columbus-area furniture makers. The deepest case study was <strong>A Carpenter's Son Design Co.</strong> — a hybrid fabricator that started selling cutting boards as a fundraiser and grew into heirloom furniture.</p>
+            <p>Their workflow: Design Proposal → Fabrication (4 fabricators, 1 piece per maker) → Finishing (2 finishers on every piece) → Onsite Install. No automation, but technology used selectively to improve workflow without sacrificing craft.</p>
+            <ul>
+              <li>Josh Scheutzow — Founder</li>
+              <li>Brad Hosfeld — Lead Designer</li>
+              <li>Cain Lackey — Shop Manager</li>
+              <li>Ellen Vail — Project Coordinator</li>
+            </ul>
+          </div>
+
+          <div class="case-quote reveal">
+            <p>The connector strategy didn't come from aesthetics — it came from understanding exactly where hybrid production breaks down.</p>
           </div>
         </div>
 
-        <div class="criteria-row">
-          <div class="criteria-cell">
-            <p>Hybrid producers rely on repeatable, standardized components</p>
+        <!-- ── DEFINE ── -->
+        <div id="ch-define">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Define</span>
+            </div>
+            <span class="section-label-count">02 / 4</span>
           </div>
-          <div class="criteria-cell criteria-cell--right">
-            <p>Design around modular, interchangeable part systems</p>
+
+          <div class="case-section reveal">
+            <h2>Design Brief</h2>
+            <p>The research surfaced a consistent theme: the thing that kills lead time in hybrid production isn't the woodworking — <strong>it's the joinery</strong>. Complex manual joints require skilled labor, slow fabrication, and can't be repeated on a CNC without losing the craft feel hybrid buyers pay for.</p>
+            <p>That became the design brief: a connection system that is strong, repeatable, tool-minimal, and CNC-compatible — without sacrificing the solid wood material that defines this market.</p>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Insight → Requirement</h2>
+            <p style="color:var(--muted);font-size:.95rem">Mapping each research insight to a hard design requirement.</p>
+          </div>
+
+          <div class="insight-table reveal">
+            <div class="insight-row">
+              <div class="insight-cell">
+                <div class="insight-cell-label">Research Insight</div>
+                <p>Consumers value durability and longevity</p>
+              </div>
+              <div class="insight-cell req">
+                <div class="insight-cell-label">Design Requirement</div>
+                <p>Use high-quality solid wood construction</p>
+              </div>
+            </div>
+            <div class="insight-row">
+              <div class="insight-cell">
+                <p>Hybrid producers rely on repeatable, standardized components</p>
+              </div>
+              <div class="insight-cell req">
+                <p>Design around modular, interchangeable part systems</p>
+              </div>
+            </div>
+            <div class="insight-row">
+              <div class="insight-cell">
+                <p>Labor-intensive fabrication limits scalability</p>
+              </div>
+              <div class="insight-cell req">
+                <p>Minimize complex manual joinery and assembly time</p>
+              </div>
+            </div>
+            <div class="insight-row">
+              <div class="insight-cell">
+                <p>Flexible production enables customization at scale</p>
+              </div>
+              <div class="insight-cell req">
+                <p>Create configurable components with shared interfaces</p>
+              </div>
+            </div>
+            <div class="insight-row">
+              <div class="insight-cell">
+                <p>Sustainability is a key purchase driver</p>
+              </div>
+              <div class="insight-cell req">
+                <p>Optimize for efficient material usage and repairability</p>
+              </div>
+            </div>
+            <div class="insight-row">
+              <div class="insight-cell">
+                <p>Hybrid makers leverage digital fabrication</p>
+              </div>
+              <div class="insight-cell req">
+                <p>Ensure geometry is CNC / precision compatible</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="criteria-row">
-          <div class="criteria-cell">
-            <p>Labor-intensive fabrication limits scalability</p>
+        <!-- ── DEVELOP ── -->
+        <div id="ch-develop">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Develop</span>
+            </div>
+            <span class="section-label-count">03 / 4</span>
           </div>
-          <div class="criteria-cell criteria-cell--right">
-            <p>Minimize complex manual joinery and assembly time</p>
+
+          <div class="case-section reveal">
+            <h2>Iteration Matrix</h2>
+            <p>I sketched across the full space of connection strategies before committing. Five made it to physical prototype. Each was handled, loaded, and assembled before moving on. The bracket won because it did something the others didn't: it was both the structural connector and the visual feature.</p>
+          </div>
+
+          <!-- Iteration matrix -->
+          <div class="iter-matrix reveal">
+            <div class="iter-matrix-head">
+              <div class="ih">Strategy</div>
+              <div class="ih">Strategy</div>
+              <div class="ih">Strategy</div>
+              <div class="ih">Strategy</div>
+              <div class="ih">→ Selected</div>
+            </div>
+            <div class="iter-matrix-body">
+
+              <!-- 01 Mortise & Tenon -->
+              <div class="iter-cell">
+                <div class="iter-num">01</div>
+                <div class="iter-name">Mortise &amp; Tenon</div>
+                <div class="iter-sketch">
+                  <svg viewBox="0 0 100 100">
+                    <rect x="20" y="35" width="60" height="30" fill="none" stroke="#666" stroke-width="1"/>
+                    <rect x="38" y="25" width="8" height="50" fill="none" stroke="#666" stroke-width="1"/>
+                    <rect x="54" y="25" width="8" height="50" fill="none" stroke="#666" stroke-width="1"/>
+                    <line x1="38" y1="50" x2="62" y2="50" stroke="#666" stroke-width=".5" stroke-dasharray="2 2"/>
+                  </svg>
+                </div>
+                <div class="iter-status abandoned">abandoned</div>
+                <p class="iter-note">Strong, but not versatile — locked into one configuration. Abandoned.</p>
+              </div>
+
+              <!-- 02 Vertical Interface -->
+              <div class="iter-cell">
+                <div class="iter-num">02</div>
+                <div class="iter-name">Vertical Interface</div>
+                <div class="iter-sketch">
+                  <svg viewBox="0 0 100 100">
+                    <line x1="50" y1="15" x2="50" y2="85" stroke="#666" stroke-width="1"/>
+                    <rect x="35" y="35" width="30" height="6" fill="none" stroke="#666" stroke-width="1"/>
+                    <rect x="35" y="55" width="30" height="6" fill="none" stroke="#666" stroke-width="1"/>
+                    <circle cx="50" cy="38" r="1.5" fill="#666"/>
+                    <circle cx="50" cy="58" r="1.5" fill="#666"/>
+                  </svg>
+                </div>
+                <div class="iter-status abandoned">abandoned</div>
+                <p class="iter-note">Strong, but limiting — restricted seat/back combinations.</p>
+              </div>
+
+              <!-- 03 Peg & Socket -->
+              <div class="iter-cell">
+                <div class="iter-num">03</div>
+                <div class="iter-name">Peg &amp; Socket</div>
+                <div class="iter-sketch">
+                  <svg viewBox="0 0 100 100">
+                    <circle cx="35" cy="50" r="14" fill="none" stroke="#666" stroke-width="1"/>
+                    <circle cx="35" cy="50" r="6" fill="#666" opacity=".2"/>
+                    <rect x="55" y="44" width="22" height="12" fill="none" stroke="#666" stroke-width="1"/>
+                    <circle cx="63" cy="50" r="3" fill="#666"/>
+                    <line x1="45" y1="50" x2="55" y2="50" stroke="#666" stroke-width=".6" stroke-dasharray="2 2"/>
+                  </svg>
+                </div>
+                <div class="iter-status tested">tested</div>
+                <p class="iter-note">Iterated for insertion force and fit tolerance. Promising, but bracket beat it on flexibility.</p>
+              </div>
+
+              <!-- 04 Sliding Connector -->
+              <div class="iter-cell">
+                <div class="iter-num">04</div>
+                <div class="iter-name">Sliding Connector</div>
+                <div class="iter-sketch">
+                  <svg viewBox="0 0 100 100">
+                    <rect x="20" y="42" width="60" height="16" fill="none" stroke="#666" stroke-width="1"/>
+                    <path d="M 32 42 L 32 58 M 48 42 L 48 58 M 64 42 L 64 58" stroke="#666" stroke-width=".5"/>
+                    <rect x="25" y="44" width="20" height="12" fill="#666" opacity=".18"/>
+                    <path d="M 75 50 L 88 50 M 84 46 L 88 50 L 84 54" stroke="#666" stroke-width="1" fill="none"/>
+                  </svg>
+                </div>
+                <div class="iter-status tested">tested</div>
+                <p class="iter-note">Intuitive assembly. Promising direction, but less self-aligning than the dovetail geometry.</p>
+              </div>
+
+              <!-- 05 Dovetail Bracket — SELECTED -->
+              <div class="iter-cell is-selected">
+                <div class="iter-num">05</div>
+                <div class="iter-name">Dovetail Bracket</div>
+                <div class="iter-sketch">
+                  <svg viewBox="0 0 100 100">
+                    <path d="M 20 60 L 35 60 L 38 50 L 62 50 L 65 60 L 80 60" fill="none" stroke="#c1392b" stroke-width="1.4"/>
+                    <path d="M 20 60 L 20 75 L 80 75 L 80 60 Z" fill="#c1392b" opacity=".12" stroke="#c1392b" stroke-width="1"/>
+                    <path d="M 38 50 L 38 35 L 62 35 L 62 50 Z" fill="#c1392b" opacity=".22" stroke="#c1392b" stroke-width="1"/>
+                    <circle cx="50" cy="42" r="1.5" fill="#c1392b"/>
+                  </svg>
+                </div>
+                <div class="iter-status selected">selected</div>
+                <p class="iter-note">Self-aligning, CNC-compatible, structural + visual. Selected — both connector AND feature.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="case-section reveal" style="margin-top:4rem">
+            <h2>Build Log</h2>
+            <p>Eight weeks. Sketches → CAD → print → break → CAD → print → CNC. The full record below — the dead ends are as important as the breakthroughs.</p>
+          </div>
+
+          <!-- Build log -->
+          <div class="buildlog reveal">
+
+            <div class="buildlog-row">
+              <div class="buildlog-date">
+                <span class="bl-num">01</span>
+                Dec 2025
+              </div>
+              <div class="buildlog-body">
+                <div>
+                  <h3>Industry mapping — four-tier framework</h3>
+                  <div class="buildlog-meta">
+                    <span class="pill">research</span>
+                    <span class="pill">reading</span>
+                  </div>
+                  <p>Mapped the US furniture market across Mass-Market, Mid-Market, Boutique Craft, Hybrid Custom. The hybrid-custom tier is the underserved opportunity — 10% of the market sitting at the sweet spot across craftsmanship, cost, output, customization, and sustainability.</p>
+                </div>
+                <div class="buildlog-img">
+                  <div class="placeholder">Five-axis spectrum</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="buildlog-row">
+              <div class="buildlog-date">
+                <span class="bl-num">02</span>
+                Dec 2025
+              </div>
+              <div class="buildlog-body">
+                <div>
+                  <h3>Maker interviews — A Carpenter's Son Design Co.</h3>
+                  <div class="buildlog-meta">
+                    <span class="pill">field</span>
+                    <span class="pill">4 shops</span>
+                  </div>
+                  <p>Site visits with Josh Scheutzow, Brad Hosfeld, Cain Lackey, Ellen Vail. Their workflow: Design Proposal → Fabrication (4 makers, 1 piece each) → Finishing (2 finishers per piece) → Onsite Install. Joinery — not woodworking — is what kills lead time.</p>
+                </div>
+                <div class="buildlog-img">
+                  <div class="placeholder">Workshop visit</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="buildlog-row">
+              <div class="buildlog-date">
+                <span class="bl-num">03</span>
+                Jan 2026
+              </div>
+              <div class="buildlog-body">
+                <div>
+                  <h3>Connector ideation — exhaust the space</h3>
+                  <div class="buildlog-meta">
+                    <span class="pill">sketching</span>
+                    <span class="pill">~30 concepts</span>
+                  </div>
+                  <p>Sketched across sliding interfaces, slide-and-lock mechanisms, compression concepts, interlocking geometries, mortise-and-tenon, finger joints, dovetail-inspired geometries, screw-in-place fasteners. The goal: don't pick early. Exhaust the option space first.</p>
+                </div>
+                <div class="buildlog-img">
+                  <div class="placeholder">Connector ideation</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="buildlog-row">
+              <div class="buildlog-date">
+                <span class="bl-num">04</span>
+                Feb 2026
+              </div>
+              <div class="buildlog-body">
+                <div>
+                  <h3>First rapid prototypes — PLA print farm</h3>
+                  <div class="buildlog-meta">
+                    <span class="pill">3D print</span>
+                    <span class="pill">fit tolerance</span>
+                  </div>
+                  <p>Printed early geometry for all five connector strategies. Mortise + tenon strong but rigid; vertical interface restrictive; peg/socket workable but no self-alignment.</p>
+                </div>
+                <div class="buildlog-img">
+                  <img src="../assets/images/knot/process-04.jpg" alt="First print run">
+                </div>
+              </div>
+            </div>
+
+            <div class="buildlog-row">
+              <div class="buildlog-date">
+                <span class="bl-num">05</span>
+                Feb 2026
+              </div>
+              <div class="buildlog-body">
+                <div>
+                  <h3>Hand-testing — insertion force, load</h3>
+                  <div class="buildlog-meta">
+                    <span class="pill">physical</span>
+                    <span class="pill">iteration</span>
+                  </div>
+                  <p>Each iteration handled, loaded, and assembled before moving on. Dovetail geometry began to separate from the pack: self-aligning during assembly, no hardware to hide.</p>
+                </div>
+                <div class="buildlog-img">
+                  <img src="../assets/images/knot/process-05.jpg" alt="Hand testing">
+                </div>
+              </div>
+            </div>
+
+            <div class="buildlog-row selected">
+              <div class="buildlog-date">
+                <span class="bl-num">06</span>
+                Mar 2026
+              </div>
+              <div class="buildlog-body">
+                <div>
+                  <h3>Selected: dovetail-inspired bracket</h3>
+                  <div class="buildlog-meta">
+                    <span class="pill selected">selected</span>
+                    <span class="pill selected">milestone</span>
+                  </div>
+                  <p>The bracket won because it did something the others didn't: it was both structural connector AND visual feature. CNC-compatible, no manual joinery, self-aligning. Two brackets per chair: seat-to-frame, backrest-to-frame. Any seat pairs with any backrest.</p>
+                </div>
+                <div class="buildlog-img">
+                  <img src="../assets/images/knot/process-06.jpg" alt="Refined bracket">
+                </div>
+              </div>
+            </div>
+
+            <div class="buildlog-row">
+              <div class="buildlog-date">
+                <span class="bl-num">07</span>
+                Mar 2026
+              </div>
+              <div class="buildlog-body">
+                <div>
+                  <h3>SolidWorks geometry — CNC validation</h3>
+                  <div class="buildlog-meta">
+                    <span class="pill">CAD</span>
+                    <span class="pill">tool path</span>
+                  </div>
+                  <p>Bracket profile drawn in SolidWorks. Geometry checked against CNC end-mill diameters and step-down tolerances. Slot width iterated 3× — final spec lands at .250" with a .003" interference fit.</p>
+                </div>
+                <div class="buildlog-img">
+                  <img src="../assets/images/knot/process-07.jpg" alt="SolidWorks model">
+                </div>
+              </div>
+            </div>
+
+            <div class="buildlog-row">
+              <div class="buildlog-date">
+                <span class="bl-num">08</span>
+                Apr 2026 — now
+              </div>
+              <div class="buildlog-body">
+                <div>
+                  <h3>KeyShot renders + walnut prototype</h3>
+                  <div class="buildlog-meta">
+                    <span class="pill">in shop</span>
+                    <span class="pill">walnut</span>
+                  </div>
+                  <p>Currently in shop: full chair walnut prototype, brackets cut on the school CNC. KeyShot configuration renders for the modular system — dining, lounge, task, barstool — all the same bracket.</p>
+                </div>
+                <div class="buildlog-img">
+                  <div class="placeholder">Walnut prototype</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 3-col process images -->
+          <div class="case-img-3col reveal">
+            <div>
+              <img src="../assets/images/knot/process-04.jpg" alt="Bracket prototypes side by side — slot width iterations">
+              <p class="caption">Slot iterations — .240 → .250 → .260 testing</p>
+            </div>
+            <div>
+              <img src="../assets/images/knot/process-05.jpg" alt="Hand-testing connector assembly">
+              <p class="caption">Hand-testing — insertion force, load</p>
+            </div>
+            <div>
+              <img src="../assets/images/knot/process-06.jpg" alt="Refined dovetail bracket — final geometry">
+              <p class="caption">Refined bracket — final geometry pre-CNC</p>
+            </div>
           </div>
         </div>
 
-        <div class="criteria-row">
-          <div class="criteria-cell">
-            <p>Flexible production enables customization at scale</p>
+        <!-- ── DELIVER ── -->
+        <div id="ch-deliver">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Deliver</span>
+            </div>
+            <span class="section-label-count">04 / 4</span>
           </div>
-          <div class="criteria-cell criteria-cell--right">
-            <p>Create configurable components with shared interfaces</p>
+
+          <div class="case-section reveal">
+            <h2>The Connector</h2>
+            <p>The dovetail-inspired bracket is the system's core. It self-aligns during assembly, requires no complex manual joinery, and is fully CNC-compatible for repeatable hybrid production. Each chair uses two brackets — one connecting the seat to the frame, one connecting the backrest — giving the system its modularity: <strong>any seat pairs with any backrest</strong>.</p>
+          </div>
+
+          <div class="case-img-full reveal">
+            <div class="placeholder" style="min-height:480px">Exploded isometric — three-component system + brackets</div>
+            <p class="caption">Exploded isometric — three components + two brackets per chair</p>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Assembly</h2>
+            <p>Frame → brackets → seat → backrest. The shared interface means components can be swapped, reconfigured, or replaced independently — without disassembling the whole system.</p>
+          </div>
+
+          <div class="case-img-2col reveal">
+            <div>
+              <div class="placeholder" style="min-height:320px">Assembly in shop</div>
+              <p class="caption">Assembly in the shop — tool-minimal, for fabricators and end users alike</p>
+            </div>
+            <div>
+              <div class="placeholder" style="min-height:320px">Seat slide-in</div>
+              <p class="caption">Seat slides into the bracket track — no alignment guesswork</p>
+            </div>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Configurations</h2>
+            <p>Because every component shares the same connector interface, the system produces a genuine range — not just colorways, but structurally different configurations. Dining, lounge, task, barstool. Walnut, oak, ash, painted. <strong>The bracket is the constant. Everything else is a variable.</strong></p>
+          </div>
+
+          <div class="case-img-full reveal">
+            <div class="placeholder" style="min-height:480px">Configurations — dining, lounge, task, barstool</div>
+            <p class="caption">Unlimited configurations from one connector — shared bracket, different components</p>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Flat-Pack</h2>
+            <p>The same modularity that enables configurations also enables flat shipping. Components nest flat in a compact box — reduced volume, reduced damage risk, reduced cost. The design criteria built this in from day one. It wasn't a feature added at the end.</p>
+          </div>
+
+          <div class="case-img-2col reveal">
+            <div>
+              <div class="placeholder" style="min-height:320px">Flat-pack contents</div>
+              <p class="caption">Ships flat — all components in one compact box</p>
+            </div>
+            <div>
+              <div class="placeholder" style="min-height:320px">Move and reassemble</div>
+              <p class="caption">Move, reassemble, reconfigure — the same system that ships flat moves with you</p>
+            </div>
           </div>
         </div>
 
-        <div class="criteria-row">
-          <div class="criteria-cell">
-            <p>Sustainability is a key purchase driver</p>
-          </div>
-          <div class="criteria-cell criteria-cell--right">
-            <p>Optimize for efficient material usage and repairability</p>
-          </div>
-        </div>
-
-        <div class="criteria-row">
-          <div class="criteria-cell">
-            <p>Hybrid makers leverage digital fabrication</p>
-          </div>
-          <div class="criteria-cell criteria-cell--right">
-            <p>Ensure geometry is compatible with CNC / precision manufacturing</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- DEVELOP -->
-    <div class="section-label reveal">
-      <div class="section-label-dot"></div>
-      <span class="section-label-text">Develop</span>
-    </div>
-
-    <div class="case-section reveal">
-      <h2>Connector Ideation</h2>
-      <p>I sketched across the full space of connection strategies: sliding interfaces, slide-and-lock mechanisms, compression concepts, interlocking geometries, mortise-and-tenon, finger joints, dovetail-inspired geometries, screw-in-place fasteners. The goal wasn't to pick a direction early — it was to exhaust the option space before committing.</p>
-    </div>
-
-    <div class="case-img-full reveal">
-      <img src="../assets/images/knot/ideation-connectors.png" alt="Connector ideation sketch spread — full range of joinery strategies explored">
-    </div>
-
-    <div class="case-section reveal">
-      <h2>Prototype Testing</h2>
-      <p>Geometry developed in SolidWorks, then 3D-printed rapid prototypes tested each connector approach physically. Each iteration was handled, loaded, and assembled before moving on.</p>
-      <ul>
-        <li>Mortise and tenon: strong, but not versatile — locked into one configuration, abandoned</li>
-        <li>Vertical interfacing: strong, but limiting — restricted seat/back combinations, abandoned</li>
-        <li>Sliding connectors: intuitive assembly/disassembly, promising direction</li>
-        <li><strong>Dovetail-inspired geometry: best combination of strength and flexibility</strong> — self-aligning, CNC-compatible, visually clean, selected</li>
-      </ul>
-      <p>The dovetail bracket won because it did something the others didn't: it was both the structural connector and the visual feature. No hardware to hide, no joinery to hand-cut.</p>
-    </div>
-
-    <div class="case-img-3col reveal">
-      <div>
-        <img src="../assets/images/knot/process-01.jpg" alt="3D-printed dovetail bracket plate — slot geometry and CNC test">
-        <p class="caption">Dovetail bracket plate — testing slot geometry and CNC compatibility</p>
-      </div>
-      <div>
-        <img src="../assets/images/knot/process-02.jpg" alt="3D-printed peg-and-socket connector — insertion force and fit tolerance test">
-        <p class="caption">Peg-and-socket iteration — testing insertion force and fit tolerance</p>
-      </div>
-      <div>
-        <img src="../assets/images/knot/process-03.jpg" alt="Refined 3D-printed dovetail bracket — geometry before CNC validation">
-        <p class="caption">Refined bracket — final geometry before CNC validation</p>
-      </div>
-    </div>
-
-    <!-- DELIVER -->
-    <div class="section-label reveal">
-      <div class="section-label-dot"></div>
-      <span class="section-label-text">Deliver</span>
-    </div>
-
-    <div class="case-section reveal">
-      <h2>The Connector</h2>
-      <p>The dovetail-inspired bracket is the system's core. It self-aligns during assembly, requires no complex manual joinery, and is fully CNC-compatible for repeatable hybrid production. Each chair uses two brackets — one connecting the seat to the frame, one connecting the backrest — giving the system its modularity: any seat pairs with any backrest.</p>
-    </div>
-
-    <div class="case-img-full reveal">
-      <img src="../assets/images/knot/render-exploded.png" alt="KNOT — exploded isometric showing the three-component system and connector brackets">
-    </div>
-
-    <div class="case-img-2col reveal">
-      <div>
-        <img src="../assets/images/knot/detail-connector-insert.png" alt="Hands inserting the dovetail bracket into the chair leg joint">
-        <p class="caption">Bracket insertion — self-aligning geometry, no tools required at this step</p>
-      </div>
-      <div>
-        <img src="../assets/images/knot/detail-connector-drill.png" alt="Drilling the connector bracket into the chair frame">
-        <p class="caption">Final fastening — one screw per bracket, standard drill</p>
-      </div>
-    </div>
-
-    <div class="case-section reveal">
-      <h2>Assembly</h2>
-      <p>Frame → brackets → seat → backrest. The shared interface means components can be swapped, reconfigured, or replaced independently — without disassembling the whole system.</p>
-    </div>
-
-    <div class="case-img-2col reveal">
-      <div>
-        <img src="../assets/images/knot/render-assembly-01.png" alt="Craftsman assembling KNOT chair in a wood workshop">
-        <p class="caption">Assembly in the shop — tool-minimal, designed for fabricators and end users alike</p>
-      </div>
-      <div>
-        <img src="../assets/images/knot/render-assembly-02.png" alt="Person sliding the seat panel into the KNOT chair frame">
-        <p class="caption">Seat slides into the bracket track — no alignment guesswork</p>
-      </div>
-    </div>
-
-    <div class="case-section reveal">
-      <h2>Configurations</h2>
-      <p>Because every component shares the same connector interface, the system produces a genuine range — not just colorways, but structurally different configurations. Dining, lounge, task, barstool. Walnut, oak, ash, painted. The bracket is the constant. Everything else is a variable.</p>
-    </div>
-
-    <div class="case-img-full reveal">
-      <img src="../assets/images/knot/render-configurations.png" alt="Four KNOT chair configurations side by side — dark walnut, green upholstery, natural oak, blue accent">
-      <p class="caption">Unlimited configurations from one connector system — shared bracket, different components</p>
-    </div>
-
-    <div class="case-img-full reveal">
-      <img src="../assets/images/knot/render-context.png" alt="Three dark walnut KNOT chairs at a long dining bench, floor-to-ceiling window">
-    </div>
-
-    <div class="case-section reveal">
-      <h2>Flat-Pack</h2>
-      <p>The same modularity that enables configurations also enables flat shipping. Components nest flat in a compact box — reduced volume, reduced damage risk, reduced cost. The design criteria built this in from day one. It wasn't a feature added at the end.</p>
-    </div>
-
-    <div class="case-img-2col reveal">
-      <div>
-        <img src="../assets/images/knot/render-flatpack-01.png" alt="Walnut KNOT components unboxed on the floor, open cardboard box, drill and screws alongside">
-        <p class="caption">Ships flat — all components in one compact box</p>
-      </div>
-      <div>
-        <img src="../assets/images/knot/render-flatpack-02.png" alt="Red KNOT chair beside flat-pack boxes — easy to move, reassemble anywhere">
-        <p class="caption">Move, reassemble, reconfigure — the same system that ships flat moves with you</p>
-      </div>
-    </div>
-
-    <!-- Process grid -->
-    <div class="section-label reveal">
-      <div class="section-label-dot"></div>
-      <span class="section-label-text">Process</span>
-    </div>
-
-    <div class="case-process-grid reveal">
-      <div><img src="../assets/images/knot/process-01.jpg" alt="3D-printed dovetail bracket — first iteration"></div>
-      <div><img src="../assets/images/knot/process-02.jpg" alt="Peg-and-socket connector prototype — fit tolerance test"></div>
-      <div><img src="../assets/images/knot/process-03.jpg" alt="Refined dovetail bracket — final geometry before CAD"></div>
-      <div><img src="../assets/images/knot/process-04.jpg" alt="Bracket prototypes side by side — slot width iterations"></div>
-      <div><img src="../assets/images/knot/process-05.jpg" alt="Hand-testing connector assembly — load and insertion force"></div>
-      <div><img src="../assets/images/knot/ideation-connectors.png" alt="Connector ideation sketches — full strategy exploration"></div>
-      <div><img src="../assets/images/knot/process-06.jpg" alt="Mortise-and-tenon prototype — tested for strength and versatility, abandoned"></div>
-      <div><img src="../assets/images/knot/process-07.jpg" alt="Vertical interface prototype — restricted seat/back pairing, abandoned"></div>
-      <div><img src="../assets/images/knot/process-08.jpg" alt="Dovetail bracket — final selected geometry"></div>
-      <div><img src="../assets/images/knot/process-09.jpg" alt="SolidWorks bracket geometry — CNC-compatible profile"></div>
-      <div><img src="../assets/images/knot/process-10.jpg" alt="Bracket assembly — seat-to-frame connection"></div>
-      <div><img src="../assets/images/knot/process-11.jpg" alt="Full assembly in progress"></div>
-      <div><img src="../assets/images/knot/process-12.jpg" alt="Final chair, walnut finish"></div>
-    </div>
+      </div><!-- /.chapter-content -->
+    </div><!-- /.chapter-layout -->
 
     <!-- Case nav -->
     <div class="case-nav">
+      <a href="../index.html" class="case-nav-link">
+        <span class="case-nav-dir">← All Work</span>
+        <span class="case-nav-title">Index</span>
+      </a>
       <a href="done.html" class="case-nav-link next">
-        <span class="case-nav-dir">Next →</span>
+        <span class="case-nav-dir">Next 02 →</span>
         <span class="case-nav-title">DONE.</span>
       </a>
     </div>
 
-  </div>
+  </div><!-- /.case-wrap -->
 
-  <footer>
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="footer-inner">
-      <span class="footer-left">© 2026 Ryan Goodman</span>
-      <ul class="footer-links">
-        <li><a href="mailto:ryangoodman1229@gmail.com">Email</a></li>
-        <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="../assets/resume-ryan-goodman.pdf" target="_blank">Resume</a></li>
-      </ul>
+      <div>
+        <div class="footer-mark">
+          I design it.<br>
+          <em>I build it.</em>
+        </div>
+        <div class="footer-sub">
+          Industrial designer · Columbus, OH. Seeking Fall 2026 co-op &amp; entry-level roles.
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Index</div>
+        <ul>
+          <li><a href="../index.html">Work</a></li>
+          <li><a href="../collaborations.html">Collaborations</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Direct</div>
+        <ul>
+          <li><a href="mailto:ryangoodman1229@gmail.com">Email <span class="ext">↗</span></a></li>
+          <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn <span class="ext">↗</span></a></li>
+          <li><a href="../assets/resume-ryan-goodman.pdf" target="_blank">Resume / PDF <span class="ext">↗</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Practice</div>
+        <ul>
+          <li>SolidWorks</li>
+          <li>KeyShot · GendoAI</li>
+          <li>CNC · 3D Printing</li>
+          <li>Rapid Prototyping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ryan Goodman · Columbus, OH</span>
+      <span class="availability"><span class="pulse"></span> Available · Fall 2026</span>
+      <span>v.2026.05 — Rebuild</span>
     </div>
   </footer>
 

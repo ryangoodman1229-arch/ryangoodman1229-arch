@@ -15,69 +15,165 @@
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
 
-  <nav>
+  <!-- Nav -->
+  <nav class="top-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-name">Ryan Goodman</a>
+      <a href="index.html" class="nav-name">
+        <span class="nav-name-dot"></span>
+        Ryan Goodman
+      </a>
       <ul class="nav-links">
         <li><a href="index.html">Work</a></li>
         <li><a href="collaborations.html">Collaborations</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
+  <!-- Mobile nav panel -->
+  <div class="nav-mobile-panel">
+    <ul>
+      <li><a href="index.html"><em>01</em>Work</a></li>
+      <li><a href="collaborations.html"><em>02</em>Collaborations</a></li>
+      <li><a href="about.html"><em>03</em>About</a></li>
+      <li><a href="contact.html"><em>04</em>Contact</a></li>
+    </ul>
+  </div>
+
   <div class="about-wrap">
 
-    <!-- Replace with your own photo -->
-    <img class="about-photo reveal" src="assets/images/ryan-photo.jpg" alt="Ryan Goodman">
+    <!-- Section label -->
+    <div class="section-label reveal" style="margin-bottom:3rem">
+      <div class="section-label-l">
+        <span class="section-label-dot"></span>
+        <span class="section-label-text">About</span>
+      </div>
+      <span class="section-label-count">03 / 04</span>
+    </div>
 
-    <h1 class="reveal reveal-d1">Designer<br>who <em>builds.</em></h1>
+    <!-- About grid: bio + photo -->
+    <div class="about-grid reveal">
+      <div>
+        <h1 class="about-headline">
+          Designer<br><em>who <span class="accent">builds.</span></em>
+        </h1>
 
-    <div class="about-body">
-      <p class="reveal reveal-d1">I'm Ryan Goodman — an industrial design student at the Columbus College of Art and Design, graduating May 2026. My work lives at the intersection of design and making: I sketch ideas, model them in SolidWorks, and build them myself.</p>
+        <div class="about-body">
+          <p class="reveal reveal-d1">I'm Ryan Goodman — an industrial design student at the Columbus College of Art and Design, graduating <strong>May 2026</strong>. My work lives at the intersection of design and making: I sketch ideas, model them in SolidWorks, and build them myself.</p>
 
-      <p class="reveal reveal-d2">From May 2025 to May 2026 I interned at SRICO in Columbus, designing and fabricating enclosures for electronic components — CNC machining, 3D printing, rapid prototyping, and KeyShot renderings for marketing, often in the same week. Before that, I collaborated with industry mentors through Form 5 COFAB to design a low-cost prosthetic, iterating functional prototypes to meet real constraints.</p>
+          <p class="reveal reveal-d2">From May 2025 to May 2026 I interned at <strong>SRICO</strong> in Columbus, designing and fabricating enclosures for electronic components — CNC machining, 3D printing, rapid prototyping, and KeyShot renderings for marketing, often in the same week. Before that, I collaborated with industry mentors through <strong>Form 5 COFAB</strong> to design a low-cost prosthetic, iterating functional prototypes to meet real constraints.</p>
 
-      <p class="reveal reveal-d3">At CCAD, I've worked across product design, furniture, spatial design, and service research — building fluency with the full design process, not just the pretty renders at the end.</p>
+          <p class="reveal reveal-d3">At CCAD, I've worked across product design, furniture, spatial design, and service research — building fluency with the full design process, not just the pretty renders at the end.</p>
 
-      <p class="reveal">I'm looking for a Fall 2026 co-op or entry-level role in Columbus, OH where I can keep doing exactly this: designing things that actually get made.</p>
+          <p class="reveal">I'm looking for a Fall 2026 co-op or entry-level role in Columbus, OH where I can keep doing exactly this: designing things that actually get made.</p>
+        </div>
+      </div>
+
+      <div class="about-photo reveal reveal-d1">
+        <div class="placeholder">Ryan Goodman · Portrait</div>
+      </div>
     </div>
 
     <div class="about-divider reveal"></div>
 
+    <!-- Tools grid -->
     <div class="reveal">
       <div class="about-label">Tools &amp; Methods</div>
-      <div class="skills-list">
-        SolidWorks &nbsp;·&nbsp; KeyShot &nbsp;·&nbsp; GendoAI &nbsp;·&nbsp; Adobe Creative Suite
-        (Photoshop, Illustrator, InDesign) &nbsp;·&nbsp; CNC Machining &nbsp;·&nbsp;
-        3D Printing &nbsp;·&nbsp; Rapid Prototyping &nbsp;·&nbsp; Scale Modeling &nbsp;·&nbsp;
-        Sketching &amp; Rendering &nbsp;·&nbsp; Service Design &nbsp;·&nbsp; User Research
+      <div class="tools-grid">
+        <div class="tool-cell"><span class="tool-num">01</span><span class="tool-name">SolidWorks</span><span class="tool-kind">3D CAD</span></div>
+        <div class="tool-cell"><span class="tool-num">02</span><span class="tool-name">KeyShot</span><span class="tool-kind">Rendering</span></div>
+        <div class="tool-cell"><span class="tool-num">03</span><span class="tool-name">GendoAI</span><span class="tool-kind">Concept</span></div>
+        <div class="tool-cell"><span class="tool-num">04</span><span class="tool-name">Adobe CC</span><span class="tool-kind">2D / Layout</span></div>
+        <div class="tool-cell"><span class="tool-num">05</span><span class="tool-name">CNC Machining</span><span class="tool-kind">Fabrication</span></div>
+        <div class="tool-cell"><span class="tool-num">06</span><span class="tool-name">3D Printing</span><span class="tool-kind">Rapid Proto</span></div>
+        <div class="tool-cell"><span class="tool-num">07</span><span class="tool-name">Scale Modeling</span><span class="tool-kind">Physical</span></div>
+        <div class="tool-cell"><span class="tool-num">08</span><span class="tool-name">Sketching</span><span class="tool-kind">Ideation</span></div>
+        <div class="tool-cell"><span class="tool-num">09</span><span class="tool-name">Service Design</span><span class="tool-kind">Research</span></div>
+        <div class="tool-cell"><span class="tool-num">10</span><span class="tool-name">User Research</span><span class="tool-kind">Field</span></div>
+        <div class="tool-cell"><span class="tool-num">11</span><span class="tool-name">KeyShot Anim.</span><span class="tool-kind">Motion</span></div>
+        <div class="tool-cell"><span class="tool-num">12</span><span class="tool-name">Shop Math</span><span class="tool-kind">Tolerance</span></div>
       </div>
-      <p class="about-avail">Open to Fall 2026 co-op and entry-level roles — Columbus, OH.</p>
-      <a href="assets/resume-ryan-goodman.pdf" target="_blank" class="btn">Download Resume (PDF)</a>
     </div>
 
     <div class="about-divider reveal"></div>
 
+    <!-- Education & Experience -->
     <div class="reveal">
-      <div class="about-label">Get in touch</div>
-      <div class="skills-list">
-        <a href="mailto:ryangoodman1229@gmail.com" style="text-decoration:underline;text-underline-offset:4px;color:var(--muted);transition:color .2s;" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color='var(--muted)'">ryangoodman1229@gmail.com</a><br>
-        <a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:4px;color:var(--muted);transition:color .2s;" onmouseenter="this.style.color='var(--accent)'" onmouseleave="this.style.color='var(--muted)'">linkedin.com/in/ryan-goodman-design</a>
+      <div class="about-label">Education &amp; Experience</div>
+      <div class="edu-grid">
+        <div class="edu-year">2026</div>
+        <div class="edu-role"><strong>BFA Industrial Design</strong> — Columbus College of Art and Design</div>
+        <div class="edu-loc">Columbus, OH</div>
+
+        <div class="edu-year">2025–26</div>
+        <div class="edu-role"><strong>Product Design Intern</strong> — SRICO</div>
+        <div class="edu-loc">Columbus, OH</div>
+
+        <div class="edu-year">2024–25</div>
+        <div class="edu-role"><strong>Designer</strong> — Form 5 COFAB · low-cost prosthetic</div>
+        <div class="edu-loc">CCAD</div>
+
+        <div class="edu-year">2023–24</div>
+        <div class="edu-role"><strong>Studio Work</strong> — Furniture · Product · Spatial · Service</div>
+        <div class="edu-loc">CCAD</div>
       </div>
+
+      <p class="about-avail">Open to Fall 2026 co-op and entry-level roles — Columbus, OH.</p>
+      <a href="assets/resume-ryan-goodman.pdf" target="_blank" class="btn primary" style="margin-top:1.5rem;display:inline-flex;align-items:center;gap:.5rem">
+        <span>↓</span>Download Resume / PDF
+      </a>
     </div>
 
   </div>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="footer-inner">
-      <span class="footer-left">© 2026 Ryan Goodman</span>
-      <ul class="footer-links">
-        <li><a href="mailto:ryangoodman1229@gmail.com">Email</a></li>
-        <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="assets/resume-ryan-goodman.pdf" target="_blank">Resume</a></li>
-      </ul>
+      <div>
+        <div class="footer-mark">
+          I design it.<br>
+          <em>I build it.</em>
+        </div>
+        <div class="footer-sub">
+          Industrial designer · Columbus, OH. Seeking Fall 2026 co-op &amp; entry-level roles.
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Index</div>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="collaborations.html">Collaborations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Direct</div>
+        <ul>
+          <li><a href="mailto:ryangoodman1229@gmail.com">Email <span class="ext">↗</span></a></li>
+          <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn <span class="ext">↗</span></a></li>
+          <li><a href="assets/resume-ryan-goodman.pdf" target="_blank">Resume / PDF <span class="ext">↗</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Practice</div>
+        <ul>
+          <li>SolidWorks</li>
+          <li>KeyShot · GendoAI</li>
+          <li>CNC · 3D Printing</li>
+          <li>Rapid Prototyping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ryan Goodman · Columbus, OH</span>
+      <span class="availability"><span class="pulse"></span> Available · Fall 2026</span>
+      <span>v.2026.05 — Rebuild</span>
     </div>
   </footer>
 

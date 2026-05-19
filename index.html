@@ -17,31 +17,67 @@
   <div class="cursor-dot" aria-hidden="true"></div>
 
   <!-- Nav -->
-  <nav>
+  <nav class="top-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-name">Ryan Goodman</a>
+      <a href="index.html" class="nav-name">
+        <span class="nav-name-dot"></span>
+        Ryan Goodman
+      </a>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Work</a></li>
         <li><a href="collaborations.html">Collaborations</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
+  <!-- Mobile nav panel -->
+  <div class="nav-mobile-panel">
+    <ul>
+      <li><a href="index.html"><em>01</em>Work</a></li>
+      <li><a href="collaborations.html"><em>02</em>Collaborations</a></li>
+      <li><a href="about.html"><em>03</em>About</a></li>
+      <li><a href="contact.html"><em>04</em>Contact</a></li>
+    </ul>
+  </div>
+
   <!-- Hero -->
   <div class="hero">
-    <div class="hero-eyebrow">Industrial Designer &nbsp;·&nbsp; Columbus, OH &nbsp;·&nbsp; CCAD 2026</div>
+    <div class="hero-corner tl"></div>
+    <div class="hero-corner br"></div>
+
+    <div class="hero-stack">
+      <div class="stack-row"><span>Lat</span><span>39.96 N</span></div>
+      <div class="stack-row"><span>Lng</span><span>83.00 W</span></div>
+      <div class="stack-row"><span>Yr</span><span>BFA 2026</span></div>
+      <div class="stack-row"><span>No</span><span>007 Projects</span></div>
+    </div>
+
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      <span>Industrial Designer</span>
+      <span class="sep">/</span>
+      <span>Columbus, OH</span>
+      <span class="sep">/</span>
+      <span>CCAD 2026</span>
+    </div>
 
     <h1 class="hero-title">
       <span class="hero-line"><span class="hero-inner">I design it.</span></span>
-      <span class="hero-line"><span class="hero-inner"><em>I build it.</em></span></span>
+      <span class="hero-line"><span class="hero-inner"><em>I </em><span class="accent">build</span><em> it.</em></span></span>
     </h1>
 
     <div class="hero-bottom">
       <div class="hero-meta">
-        <span>SolidWorks · KeyShot · CNC · 3D Printing</span>
-        <span>Seeking Fall 2026 Co-op &amp; Entry-Level Roles</span>
+        <div class="hero-meta-row"><span class="label">Stack</span><span class="val">SolidWorks · KeyShot · CNC · 3D Printing</span></div>
+        <div class="hero-meta-row"><span class="label">Focus</span><span class="val">Furniture · Product · Fabrication</span></div>
+        <div class="hero-meta-row"><span class="label">Site</span><span class="val">v.2026.05 — Rebuild</span></div>
+        <div class="hero-status"><span class="pulse"></span>Available — Fall 2026 Co-op &amp; Entry-Level Roles</div>
       </div>
       <div class="hero-scroll">
         <span>Scroll</span>
@@ -49,7 +85,6 @@
       </div>
     </div>
   </div>
-  <div class="hero-border"></div>
 
   <!-- Process flow strip -->
   <div class="process-flow">
@@ -60,7 +95,7 @@
       <span class="pf-arrow">→</span>
       <div class="pf-step"><span class="pf-num">03</span><span class="pf-label">Prototype</span></div>
       <span class="pf-arrow">→</span>
-      <div class="pf-step"><span class="pf-num">04</span><span class="pf-label">Fabricate</span></div>
+      <div class="pf-step active"><span class="pf-num">04</span><span class="pf-label">Fabricate</span></div>
       <span class="pf-arrow">→</span>
       <div class="pf-step"><span class="pf-num">05</span><span class="pf-label">Test</span></div>
       <span class="pf-arrow">→</span>
@@ -68,25 +103,54 @@
     </div>
   </div>
 
+  <!-- Currently making — ticker -->
+  <div class="ticker">
+    <div class="ticker-label"><span class="pulse"></span>Currently</div>
+    <div class="ticker-track-wrap">
+      <div class="ticker-track">
+        <div class="ticker-set">
+          <span class="ticker-item"><span class="ti-num">IN_SHOP</span>CNC validation — dovetail bracket, walnut, .25&quot; tolerance<span class="ticker-sep">·</span></span>
+          <span class="ticker-item"><span class="ti-num">NEXT</span>KNOT seat-panel rapid prototype, PLA<span class="ticker-sep">·</span></span>
+          <span class="ticker-item"><span class="ti-num">READING</span>&ldquo;How to Make a Chair&rdquo; — Mateu Velasco<span class="ticker-sep">·</span></span>
+          <span class="ticker-item"><span class="ti-num">TOOLING</span>Bridgeport mill — fixture jig revision 3<span class="ticker-sep">·</span></span>
+          <span class="ticker-item"><span class="ti-num">STUDIO</span>CCAD Industrial Design — Capstone Studio 4B<span class="ticker-sep">·</span></span>
+        </div>
+        <div class="ticker-set" aria-hidden="true">
+          <span class="ticker-item"><span class="ti-num">IN_SHOP</span>CNC validation — dovetail bracket, walnut, .25&quot; tolerance<span class="ticker-sep">·</span></span>
+          <span class="ticker-item"><span class="ti-num">NEXT</span>KNOT seat-panel rapid prototype, PLA<span class="ticker-sep">·</span></span>
+          <span class="ticker-item"><span class="ti-num">READING</span>&ldquo;How to Make a Chair&rdquo; — Mateu Velasco<span class="ticker-sep">·</span></span>
+          <span class="ticker-item"><span class="ti-num">TOOLING</span>Bridgeport mill — fixture jig revision 3<span class="ticker-sep">·</span></span>
+          <span class="ticker-item"><span class="ti-num">STUDIO</span>CCAD Industrial Design — Capstone Studio 4B<span class="ticker-sep">·</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Work section label -->
   <div class="section-label reveal">
-    <span class="section-label-dot"></span>
-    <span class="section-label-text">Selected Work</span>
+    <div class="section-label-l">
+      <span class="section-label-dot"></span>
+      <span class="section-label-text">Selected Work</span>
+    </div>
+    <span class="section-label-count">07</span>
   </div>
 
   <!-- Project grid -->
   <div class="grid-wrap reveal reveal-d1">
-    <div class="project-grid">
+    <div class="project-grid layout-editorial">
 
       <!-- 01 KNOT -->
-      <a href="projects/knot.html" class="project-card c-knot">
+      <a href="projects/knot.html" class="project-card style-fill c-knot">
         <div class="card-img">
           <img src="assets/images/knot/hero.jpg" alt="KNOT — modular chair system">
         </div>
+        <span class="card-status">Capstone</span>
         <div class="card-label">
-          <span class="card-num">01</span>
+          <span class="card-num">01 · 2026</span>
           <h2>KNOT</h2>
-          <p>Modular Chair System — BFA Capstone</p>
+          <div class="card-meta">
+            <span>BFA Capstone</span><span>CCAD 2026</span><span>Furniture</span>
+          </div>
         </div>
         <div class="card-arrow" aria-hidden="true">
           <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -96,14 +160,16 @@
       </a>
 
       <!-- 02 DONE. -->
-      <a href="projects/done.html" class="project-card c-done">
+      <a href="projects/done.html" class="project-card style-fill c-done">
         <div class="card-img">
           <img src="assets/images/done/hero.jpg" alt="DONE. — digital meat thermometer">
         </div>
         <div class="card-label">
-          <span class="card-num">02</span>
+          <span class="card-num">02 · 2025</span>
           <h2>DONE.</h2>
-          <p>Digital Meat Thermometer</p>
+          <div class="card-meta">
+            <span>Product Studio</span><span>2025</span><span>Consumer</span>
+          </div>
         </div>
         <div class="card-arrow" aria-hidden="true">
           <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -112,15 +178,17 @@
         </div>
       </a>
 
-      <!-- 03 MEDucation -->
-      <a href="projects/meducation.html" class="project-card c-med">
+      <!-- 03 MEDucation MRI -->
+      <a href="projects/meducation.html" class="project-card style-fill c-med">
         <div class="card-img">
-          <img src="assets/images/meducation/hero.jpg" alt="MEDucation MRI — pediatric medical toy">
+          <div class="placeholder">MEDucation MRI</div>
         </div>
         <div class="card-label">
-          <span class="card-num">03</span>
+          <span class="card-num">03 · 2024</span>
           <h2>MEDucation MRI</h2>
-          <p>Pediatric Medical Toy System</p>
+          <div class="card-meta">
+            <span>Service Design</span><span>2024</span><span>Healthcare</span>
+          </div>
         </div>
         <div class="card-arrow" aria-hidden="true">
           <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -130,14 +198,16 @@
       </a>
 
       <!-- 04 Nomad Drawer -->
-      <a href="projects/nomad-drawer.html" class="project-card c-nomad">
+      <a href="projects/nomad-drawer.html" class="project-card style-fill c-nomad">
         <div class="card-img">
           <img src="assets/images/nomad-drawer/hero.jpg" alt="Nomad Drawer — mobile workshop storage">
         </div>
         <div class="card-label">
-          <span class="card-num">04</span>
+          <span class="card-num">04 · 2024</span>
           <h2>Nomad Drawer</h2>
-          <p>Mobile Workshop Storage — IHA</p>
+          <div class="card-meta">
+            <span>IHA Industry Brief</span><span>2024</span><span>Storage</span>
+          </div>
         </div>
         <div class="card-arrow" aria-hidden="true">
           <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -146,15 +216,17 @@
         </div>
       </a>
 
-      <!-- 05 Landing Zone -->
-      <a href="projects/landing-zone.html" class="project-card c-lz">
+      <!-- 05 The Landing Zone -->
+      <a href="projects/landing-zone.html" class="project-card style-fill c-lz">
         <div class="card-img">
           <img src="assets/images/landing-zone/hero.jpg" alt="The Landing Zone — entry organizer">
         </div>
         <div class="card-label">
-          <span class="card-num">05</span>
+          <span class="card-num">05 · 2024</span>
           <h2>The Landing Zone</h2>
-          <p>Entry Organizer — 112 Points of Customization</p>
+          <div class="card-meta">
+            <span>Entry Organizer</span><span>2024</span><span>Customization</span>
+          </div>
         </div>
         <div class="card-arrow" aria-hidden="true">
           <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -164,14 +236,16 @@
       </a>
 
       <!-- 06 DOGBOWL -->
-      <a href="projects/dogbowl.html" class="project-card c-dog">
+      <a href="projects/dogbowl.html" class="project-card style-fill c-dog">
         <div class="card-img">
-          <img src="assets/images/dogbowl/hero.jpg" alt="DOGBOWL — elevated pet bowl">
+          <div class="placeholder">DOGBOWL</div>
         </div>
         <div class="card-label">
-          <span class="card-num">06</span>
+          <span class="card-num">06 · 2023</span>
           <h2>DOGBOWL</h2>
-          <p>Elevated Pet Bowl</p>
+          <div class="card-meta">
+            <span>Product Brief</span><span>2023</span><span>Pet</span>
+          </div>
         </div>
         <div class="card-arrow" aria-hidden="true">
           <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -181,14 +255,16 @@
       </a>
 
       <!-- 07 ZAG Chair -->
-      <a href="projects/zag-chair.html" class="project-card c-zag">
+      <a href="projects/zag-chair.html" class="project-card style-fill c-zag">
         <div class="card-img">
-          <img src="assets/images/zag-chair/hero.jpg" alt="ZAG Chair — under-seat storage furniture">
+          <div class="placeholder">ZAG Chair</div>
         </div>
         <div class="card-label">
-          <span class="card-num">07</span>
+          <span class="card-num">07 · 2023</span>
           <h2>ZAG Chair</h2>
-          <p>Under-Seat Storage Furniture</p>
+          <div class="card-meta">
+            <span>Furniture Studio</span><span>2023</span><span>Seating</span>
+          </div>
         </div>
         <div class="card-arrow" aria-hidden="true">
           <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -200,15 +276,51 @@
     </div>
   </div>
 
+  <div style="height:6rem"></div>
+
   <!-- Footer -->
-  <footer>
+  <footer class="site-footer">
     <div class="footer-inner">
-      <span class="footer-left">© 2026 Ryan Goodman</span>
-      <ul class="footer-links">
-        <li><a href="mailto:ryangoodman1229@gmail.com">Email</a></li>
-        <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="assets/resume-ryan-goodman.pdf" target="_blank">Resume</a></li>
-      </ul>
+      <div>
+        <div class="footer-mark">
+          I design it.<br>
+          <em>I build it.</em>
+        </div>
+        <div class="footer-sub">
+          Industrial designer · Columbus, OH. Seeking Fall 2026 co-op &amp; entry-level roles.
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Index</div>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="collaborations.html">Collaborations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Direct</div>
+        <ul>
+          <li><a href="mailto:ryangoodman1229@gmail.com">Email <span class="ext">↗</span></a></li>
+          <li><a href="https://linkedin.com/in/ryan-goodman-design" target="_blank" rel="noopener">LinkedIn <span class="ext">↗</span></a></li>
+          <li><a href="assets/resume-ryan-goodman.pdf" target="_blank">Resume / PDF <span class="ext">↗</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Practice</div>
+        <ul>
+          <li>SolidWorks</li>
+          <li>KeyShot · GendoAI</li>
+          <li>CNC · 3D Printing</li>
+          <li>Rapid Prototyping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ryan Goodman · Columbus, OH</span>
+      <span class="availability"><span class="pulse"></span> Available · Fall 2026</span>
+      <span>v.2026.05 — Rebuild</span>
     </div>
   </footer>
 
