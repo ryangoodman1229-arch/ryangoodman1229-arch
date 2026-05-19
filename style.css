@@ -1040,6 +1040,49 @@ footer {
 }
 
 /* ============================================================
+   CASE STUDY — CRITERIA / INSIGHT TABLE
+   ============================================================ */
+.criteria-table {
+  margin: 0 auto 4rem;
+  max-width: 860px;
+  padding: 0 2.5rem;
+}
+.criteria-table-inner {
+  border-top: 1px solid var(--border);
+}
+.criteria-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--border);
+}
+.criteria-row:last-child { border-bottom: none; }
+.criteria-cell {
+  padding: 1.25rem 1.5rem 1.25rem 0;
+}
+.criteria-cell--right {
+  padding: 1.25rem 0 1.25rem 1.5rem;
+  border-left: 1px solid var(--border);
+}
+.criteria-cell-head {
+  font-family: var(--mono);
+  font-size: .5rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--muted);
+  display: block;
+  margin-bottom: .4rem;
+}
+.criteria-cell p {
+  font-size: .875rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--muted);
+}
+.criteria-cell--right p {
+  color: var(--text);
+}
+
+/* ============================================================
    COLLABORATIONS PAGE
    ============================================================ */
 .collab-wrap {
@@ -1113,6 +1156,8 @@ footer {
 
 @media (max-width: 580px) {
   .case-stats { grid-template-columns: 1fr; }
+  .criteria-row { grid-template-columns: 1fr; }
+  .criteria-cell--right { border-left: none; padding: 0 0 1.25rem; }
   html { cursor: auto; }
   .cursor, .cursor-dot { display: none; }
 
