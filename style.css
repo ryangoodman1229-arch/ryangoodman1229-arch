@@ -20,9 +20,9 @@
   --border:      #e5e5e5;
   --border-2:    #cccccc;
 
-  --display: 'Bebas Neue', sans-serif;
-  --serif:   'Instrument Sans', sans-serif;
-  --body:    'Instrument Sans', sans-serif;
+  --display: 'Lexend', 'Helvetica Neue', sans-serif;
+  --serif:   'Lexend', 'Helvetica Neue', sans-serif;
+  --body:    'Lexend', 'Helvetica Neue', sans-serif;
   --mono:    'IBM Plex Mono', monospace;
 
   --ease:     cubic-bezier(.25,.46,.45,.94);
@@ -33,13 +33,70 @@
   --nav-h:   56px;
 }
 
+/* === EXPANDED DESIGN-SYSTEM TOKENS (from colors_and_type.css) === */
+:root {
+  /* Brand red — case-study / about / contact accent moments only */
+  --red:          #c1392b;
+  --red-clay:     #a83b2e;
+  --red-soft:     #d96b5c;
+  --red-glow:     rgba(193,57,43,.08);
+  --red-rule:     rgba(193,57,43,.45);
+  --brand-accent: var(--red);
+
+  /* Semantic aliases */
+  --fg-1:        var(--text);
+  --fg-2:        var(--muted);
+  --fg-3:        var(--dim);
+  --bg-1:        var(--bg);
+  --bg-2:        var(--surface);
+  --bg-3:        var(--surface-2);
+  --rule:        var(--border);
+  --rule-strong: var(--border-2);
+
+  /* Padding scale */
+  --pad-x:    2.5rem;
+  --pad-x-md: 1.5rem;
+  --pad-x-sm: 1.25rem;
+
+  /* Body metrics */
+  --body-lh:    1.55;
+  --body-track: 0;
+
+  /* Type-scale shorthands */
+  --t-display-1: 700 clamp(3.25rem, 7vw, 7.25rem)/1 var(--display);
+  --t-display-2: 300 clamp(2.5rem, 5.5vw, 4.5rem)/1.04 var(--display);
+  --t-display-3: 500 clamp(1.125rem, 1.75vw, 1.5rem)/1.15 var(--display);
+  --t-h1:        300 clamp(2.5rem, 5.5vw, 4.25rem)/1.04 var(--display);
+  --t-h2:        500 1.25rem/1.2 var(--display);
+  --t-stat:      400 clamp(1.5rem, 3vw, 2.25rem)/1.05 var(--display);
+  --t-body:      400 1rem/var(--body-lh) var(--body);
+  --t-body-lg:   400 1.125rem/1.5 var(--body);
+  --t-tagline:   400 1.125rem/1.5 var(--body);
+  --t-quote:     400 clamp(1.2rem, 2.4vw, 1.75rem)/1.4 var(--body);
+  --t-mono-xs:   400 .5rem/1.4 var(--mono);
+  --t-mono-sm:   400 .5625rem/1.4 var(--mono);
+  --t-mono-md:   400 .625rem/1.4 var(--mono);
+
+  /* Letter-spacing scale */
+  --tr-display:        -.04em;
+  --tr-h2:             -.025em;
+  --tr-mono-eyebrow:    .18em;
+  --tr-mono-label:      .14em;
+  --tr-mono-nav:        .16em;
+  --tr-mono-cap:        .1em;
+
+  /* Elevation & radius */
+  --card-shadow: none;
+  --radius:      0;
+}
+
 /* === BASE === */
 html {
   background: var(--bg);
   color: var(--text);
   font-family: var(--body);
   font-size: 16px;
-  line-height: 1.7;
+  line-height: var(--body-lh);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-optical-sizing: auto;
@@ -166,10 +223,11 @@ nav.scrolled {
 /* Staggered title lines */
 .hero-title {
   font-family: var(--display);
-  font-weight: 300;
-  line-height: .98;
+  font-weight: 700;
+  line-height: 1;
   letter-spacing: -.04em;
-  font-size: clamp(4rem, 10vw, 10.5rem);
+  font-size: clamp(3.25rem, 7vw, 7.25rem);
+  text-transform: uppercase;
   color: var(--text);
 }
 
@@ -461,7 +519,7 @@ footer {
 }
 .case-header h1 {
   font-family: var(--display);
-  font-size: clamp(2.75rem, 6.5vw, 6rem);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
   font-weight: 300;
   letter-spacing: -.04em;
   line-height: 1.02;
@@ -515,14 +573,14 @@ footer {
   font-size: .5rem;
   text-transform: uppercase;
   letter-spacing: .18em;
-  color: var(--accent);
+  color: var(--brand-accent);
   margin-bottom: 1.25rem;
   display: flex; align-items: center; gap: .75rem;
 }
 .case-section h2::before {
   content: ''; display: block;
   width: 18px; height: 1px;
-  background: var(--accent); flex-shrink: 0;
+  background: var(--brand-accent); flex-shrink: 0;
 }
 .case-section p {
   font-size: 1rem; line-height: 1.85;
@@ -538,14 +596,14 @@ footer {
   max-width: var(--text-w);
   margin: 4.5rem auto;
   padding: 2.5rem 2.5rem 2.5rem 3rem;
-  border-left: 1px solid var(--accent);
+  border-left: 1px solid var(--brand-accent);
   position: relative;
 }
 .case-quote::before {
   content: '\201C';
   font-family: var(--display);
   font-size: 6rem;
-  color: var(--accent);
+  color: var(--brand-accent);
   opacity: .18;
   position: absolute;
   top: -.5rem; left: 1rem;
@@ -652,7 +710,7 @@ footer {
   font-size: .5rem;
   text-transform: uppercase;
   letter-spacing: .14em;
-  color: var(--accent);
+  color: var(--brand-accent);
 }
 .case-nav-title {
   font-family: var(--display);
@@ -680,7 +738,7 @@ footer {
 }
 .about-wrap h1 {
   font-family: var(--display);
-  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
   font-weight: 300;
   letter-spacing: -.04em;
   line-height: 1.02;
@@ -699,14 +757,14 @@ footer {
   font-size: .5rem;
   text-transform: uppercase;
   letter-spacing: .18em;
-  color: var(--accent);
+  color: var(--brand-accent);
   margin-bottom: 1rem;
   display: flex; align-items: center; gap: .75rem;
 }
 .about-label::before {
   content: ''; display: block;
   width: 16px; height: 1px;
-  background: var(--accent);
+  background: var(--brand-accent);
 }
 
 .skills-list {
@@ -756,7 +814,7 @@ footer {
 }
 .contact-wrap h1 {
   font-family: var(--display);
-  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
   font-weight: 300;
   letter-spacing: -.04em;
   line-height: 1.02;
@@ -774,13 +832,13 @@ footer {
   font-size: .5rem;
   text-transform: uppercase;
   letter-spacing: .18em;
-  color: var(--accent);
+  color: var(--brand-accent);
   margin-bottom: 1rem;
   display: flex; align-items: center; gap: .75rem;
 }
 .contact-blk-label::before {
   content: ''; display: block;
-  width: 16px; height: 1px; background: var(--accent);
+  width: 16px; height: 1px; background: var(--brand-accent);
 }
 
 .contact-direct { margin-bottom: 4.5rem; }
