@@ -162,7 +162,7 @@
     const lbImg   = document.getElementById('lb-img');
     const lbClose = document.getElementById('lb-close');
 
-    document.querySelectorAll('.buildlog-img img, [data-lb]').forEach(img => {
+    document.querySelectorAll('.buildlog-img img').forEach(img => {
       img.addEventListener('click', () => {
         lbImg.src = img.src;
         lbImg.alt = img.alt;
