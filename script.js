@@ -156,4 +156,30 @@
     });
   }
 
+  /* ── Build log lightbox ── */
+  const lbOverlay = document.getElementById('lb-overlay');
+  if (lbOverlay) {
+    const lbImg   = document.getElementById('lb-img');
+    const lbClose = document.getElementById('lb-close');
+
+    document.querySelectorAll('.buildlog-img img').forEach(img => {
+      img.addEventListener('click', () => {
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        lbOverlay.classList.add('open');
+        lbOverlay.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    function closeLb() {
+      lbOverlay.classList.remove('open');
+      lbOverlay.setAttribute('aria-hidden', 'true');
+      lbImg.src = '';
+    }
+
+    lbOverlay.addEventListener('click', e => { if (e.target !== lbImg) closeLb(); });
+    lbClose.addEventListener('click', closeLb);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+  }
+
 })();
