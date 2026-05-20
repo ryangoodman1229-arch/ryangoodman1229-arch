@@ -1475,11 +1475,24 @@ footer.site-footer {
   color: var(--text);
 }
 .buildlog-img {
+  position: relative;
   width: 100%;
   aspect-ratio: 1;
   background: var(--surface);
   overflow: hidden;
 }
+.buildlog-img::after {
+  content: '⤢';
+  position: absolute;
+  bottom: .45rem; right: .5rem;
+  font-size: .85rem;
+  color: #fff;
+  opacity: .45;
+  pointer-events: none;
+  transition: opacity .25s;
+  text-shadow: 0 1px 3px rgba(0,0,0,.55);
+}
+.buildlog-img:hover::after { opacity: .95; }
 .buildlog-img img, .buildlog-img .placeholder {
   width: 100%; height: 100%; object-fit: cover;
   filter: brightness(.92) saturate(.88);
@@ -2093,3 +2106,39 @@ footer.site-footer {
 }
 #lb-close:hover { opacity: 1; }
 .buildlog-img img { cursor: zoom-in; }
+
+/* ── Prototype photo grid ── */
+.proto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem;
+  margin: 2rem 0 3rem;
+}
+.proto-grid-img {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--surface);
+}
+.proto-grid-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(.92) saturate(.88);
+  transition: filter .4s, transform .5s var(--ease);
+  cursor: zoom-in;
+}
+.proto-grid-img:hover img { filter: brightness(1) saturate(1); transform: scale(1.04); }
+.proto-grid-img::after {
+  content: '⤢';
+  position: absolute;
+  bottom: .45rem; right: .5rem;
+  font-size: .85rem;
+  color: #fff;
+  opacity: .45;
+  pointer-events: none;
+  transition: opacity .25s;
+  text-shadow: 0 1px 3px rgba(0,0,0,.55);
+}
+.proto-grid-img:hover::after { opacity: .95; }
+@media (max-width: 720px) {
+  .proto-grid { grid-template-columns: repeat(2, 1fr); gap: .5rem; }
+}
