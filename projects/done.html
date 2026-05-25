@@ -54,15 +54,13 @@
 
     <!-- Process flow -->
     <div class="case-flow reveal">
-      <div class="cf-step">01 — Problem Framing</div>
+      <div class="cf-step">01 — Discover</div>
       <span class="cf-arr">→</span>
-      <div class="cf-step">02 — Design Criteria</div>
+      <div class="cf-step">02 — Define</div>
       <span class="cf-arr">→</span>
-      <div class="cf-step">03 — Concept Exploration</div>
+      <div class="cf-step">03 — Develop</div>
       <span class="cf-arr">→</span>
-      <div class="cf-step">04 — Foam Modeling</div>
-      <span class="cf-arr">→</span>
-      <div class="cf-step">05 — Final Renders</div>
+      <div class="cf-step">04 — Deliver</div>
     </div>
 
     <!-- Case header -->
@@ -97,17 +95,41 @@
       </div>
     </div>
 
-    <!-- ── DISCOVER ── -->
-    <div class="section-label reveal">
-      <div class="section-label-l">
-        <span class="section-label-dot"></span>
-        <span class="section-label-text">Problem Framing</span>
-      </div>
-      <span class="section-label-count">01 / 5</span>
-    </div>
+    <!-- Chapter layout: sticky rail + content -->
+    <div class="chapter-layout">
 
-    <div class="case-section reveal">
-      <h2>The Problem</h2>
+      <aside class="chapter-rail">
+        <div class="chapter-rail-title">Case Study · 04 Chapters</div>
+        <ul class="chapter-list">
+          <li class="active" data-ch="discover" data-cursor="pointer">
+            <span class="ch-num">01</span><span>Discover</span>
+          </li>
+          <li data-ch="define" data-cursor="pointer">
+            <span class="ch-num">02</span><span>Define</span>
+          </li>
+          <li data-ch="develop" data-cursor="pointer">
+            <span class="ch-num">03</span><span>Develop</span>
+          </li>
+          <li data-ch="deliver" data-cursor="pointer">
+            <span class="ch-num">04</span><span>Deliver</span>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="chapter-content">
+
+        <!-- ── DISCOVER ── -->
+        <div id="ch-discover">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Discover</span>
+            </div>
+            <span class="section-label-count">01 / 4</span>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>The Problem</h2>
       <p>Meat thermometers are utility objects masquerading as tools. Most are clinical, forgettable, and designed to disappear into a drawer. But the moment of using one — standing at the grill, checking the roast — is a moment of anticipation. The product should match the energy of that moment.</p>
       <p>The insight was direct: if the product's only job is to tell you one thing, it should say that thing loudly. The name writes the brief. <strong>DONE.</strong></p>
     </div>
@@ -126,14 +148,17 @@
       <p>DONE. A cooking pun and a product promise. From rare to well — you'll know when it's done.</p>
     </div>
 
-    <!-- ── DEFINE ── -->
-    <div class="section-label reveal">
-      <div class="section-label-l">
-        <span class="section-label-dot"></span>
-        <span class="section-label-text">Design Criteria</span>
-      </div>
-      <span class="section-label-count">02 / 5</span>
-    </div>
+        </div><!-- /#ch-discover -->
+
+        <!-- ── DEFINE ── -->
+        <div id="ch-define">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Define</span>
+            </div>
+            <span class="section-label-count">02 / 4</span>
+          </div>
 
     <div class="case-section reveal">
       <h2>Design Criteria</h2>
@@ -185,14 +210,17 @@
       </div>
     </div>
 
-    <!-- ── DEVELOP ── -->
-    <div class="section-label reveal">
-      <div class="section-label-l">
-        <span class="section-label-dot"></span>
-        <span class="section-label-text">Concept Exploration</span>
-      </div>
-      <span class="section-label-count">03 / 5</span>
-    </div>
+        </div><!-- /#ch-define -->
+
+        <!-- ── DEVELOP ── -->
+        <div id="ch-develop">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Develop</span>
+            </div>
+            <span class="section-label-count">03 / 4</span>
+          </div>
 
     <div class="case-section reveal">
       <h2>Concept Exploration</h2>
@@ -226,14 +254,17 @@
       <p>The final handle geometry came directly from foam, not from a screen.</p>
     </div>
 
-    <!-- ── DELIVER ── -->
-    <div class="section-label reveal">
-      <div class="section-label-l">
-        <span class="section-label-dot"></span>
-        <span class="section-label-text">Final Renders</span>
-      </div>
-      <span class="section-label-count">04 / 5</span>
-    </div>
+        </div><!-- /#ch-develop -->
+
+        <!-- ── DELIVER ── -->
+        <div id="ch-deliver">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Deliver</span>
+            </div>
+            <span class="section-label-count">04 / 4</span>
+          </div>
 
     <div class="case-section reveal">
       <h2>The Product</h2>
@@ -293,6 +324,11 @@
         <p class="caption">Final packaging render</p>
       </div>
     </div>
+
+        </div><!-- /#ch-deliver -->
+
+      </div><!-- /.chapter-content -->
+    </div><!-- /.chapter-layout -->
 
     <!-- ── PROCESS ── -->
     <div class="section-label reveal">
