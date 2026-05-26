@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZAG Chair — Ryan Goodman</title>
-  <meta name="description" content="ZAG Chair: under-seat storage furniture built in white oak and felt — seating that earns its space in a room.">
+  <meta name="description" content="ZAG Chair: under-seat storage furniture where the form creates the shelf — seating that earns its place in a room by doing two things at once.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -49,7 +49,7 @@
 
     <!-- Case hero -->
     <div class="case-hero">
-      <div class="placeholder" style="min-height:88vh">ZAG Chair — Under-Seat Storage Furniture</div>
+      <img src="../assets/images/zag-chair/hero.jpg" alt="ZAG Chair — studio render, dark walnut, 3/4 view showing Z-profile and integrated undershelf with book">
       <div class="case-hero-overlay">
         <div>
           <div class="hero-num">Project 07 / 07 · Furniture Studio</div>
@@ -57,39 +57,310 @@
         </div>
         <div class="hero-side">
           Under-seat storage furniture<br>
-          White Oak · Felt<br>
+          Walnut · Fabric<br>
           2023<br>
           CCAD · Columbus, OH
         </div>
       </div>
     </div>
 
+    <!-- Process flow -->
+    <div class="case-flow reveal">
+      <div class="cf-step">01 — Problem Framing</div>
+      <span class="cf-arr">→</span>
+      <div class="cf-step">02 — Design Criteria</div>
+      <span class="cf-arr">→</span>
+      <div class="cf-step">03 — Direct-to-CAD</div>
+      <span class="cf-arr">→</span>
+      <div class="cf-step">04 — KeyShot Renders</div>
+    </div>
+
     <!-- Case header -->
     <div class="case-header reveal">
-      <p class="case-tagline">Case study in progress. The work below outlines what's coming.</p>
+      <p class="case-tagline">
+        A chair designed around the space most furniture ignores — the volume underneath the seat.
+      </p>
     </div>
 
     <!-- Case meta -->
     <div class="case-meta reveal">
       <div class="meta-row"><span class="meta-label">Role</span><span class="meta-value">Industrial Designer · Furniture Studio, CCAD</span></div>
       <div class="meta-row"><span class="meta-label">Timeline</span><span class="meta-value">2023</span></div>
-      <div class="meta-row"><span class="meta-label">Tools</span><span class="meta-value">SolidWorks · KeyShot · Scale Modeling · CNC Machining</span></div>
-      <div class="meta-row"><span class="meta-label">Context</span><span class="meta-value">Seating · White Oak · Felt</span></div>
-      <div class="meta-row"><span class="meta-label">Status</span><span class="meta-value" style="color:var(--brand-accent)">● Case study writing in progress</span></div>
+      <div class="meta-row"><span class="meta-label">Tools</span><span class="meta-value">Shapr3D · SolidWorks · KeyShot</span></div>
+      <div class="meta-row"><span class="meta-label">Context</span><span class="meta-value">Furniture Studio · CCAD · Solo Project</span></div>
     </div>
 
-    <div class="case-status reveal">
-      <span class="pulse"></span> Case study writing in progress
+    <!-- Case stats -->
+    <div class="case-stats reveal">
+      <div class="stat-item">
+        <div class="stat-num">1</div>
+        <div class="stat-label">Shape, Two Problems</div>
+        <div class="stat-desc">Comfort and storage solved simultaneously — the Z-step profile creates the shelf as a structural consequence, not an added feature</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Design Requirements</div>
+        <div class="stat-desc">Integrated undershelf · Z-profile self-sufficient · Wood primary · Dual-context legibility · Two production paths viable</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Secondary Bracing</div>
+        <div class="stat-desc">No corner brackets, no added hardware — the angular geometry carries the load. Structure and aesthetic are the same decision</div>
+      </div>
     </div>
 
-    <div class="case-section reveal">
-      <h2>Why this project</h2>
-      <p>The ZAG Chair was designed during Furniture Studio at CCAD — seating that earns its space in a room by doing two things at once. Under-seat storage built into the structure in white oak and felt, not bolted on. The full write-up — Discover, Define, Develop, Deliver — is being assembled with the same rigor as the KNOT case study.</p>
-      <p>For an example of how I document a project end-to-end, take a look at <a href="knot.html" style="color:var(--brand-accent);border-bottom:1px solid var(--brand-accent)">KNOT</a>.</p>
+    <!-- Chapter layout: sticky rail + content -->
+    <div class="chapter-layout">
+
+      <aside class="chapter-rail">
+        <div class="chapter-rail-title">Case Study · 04 Chapters</div>
+        <ul class="chapter-list">
+          <li class="active" data-ch="discover" data-cursor="pointer">
+            <span class="ch-num">01</span><span>Discover</span>
+          </li>
+          <li data-ch="define" data-cursor="pointer">
+            <span class="ch-num">02</span><span>Define</span>
+          </li>
+          <li data-ch="develop" data-cursor="pointer">
+            <span class="ch-num">03</span><span>Develop</span>
+          </li>
+          <li data-ch="deliver" data-cursor="pointer">
+            <span class="ch-num">04</span><span>Deliver</span>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="chapter-content">
+
+        <!-- ── DISCOVER ── -->
+        <div id="ch-discover">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Discover</span>
+            </div>
+            <span class="section-label-count">01 / 4</span>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>The Problem</h2>
+            <p>Most chairs treat the space beneath the seat as dead space. Yet that's exactly where small items — books, a magazine, a phone, a remote — end up anyway, usually on the floor or piled on a nearby surface. The problem isn't that storage doesn't exist in chairs. It's that when it does, the design apologizes for it.</p>
+            <p>The seating market splits into two categories that never overlap:</p>
+            <ul>
+              <li><strong>Design-forward chairs</strong> — HAY, Muuto, DWR, Knoll. Beautiful objects, no spatial utility. Storage isn't considered at any price point.</li>
+              <li><strong>Storage-integrated chairs</strong> — Wayfair accent chairs, piano benches, lift-top ottomans. The compartment is always hidden because the form can't justify it. The storage is an apology.</li>
+            </ul>
+            <p>The gap: no chair at the design-forward tier treats storage as a structural, visible element derived from the chair's own geometry.</p>
+          </div>
+
+          <!-- 2x2 matrix SVG -->
+          <div class="case-img-full reveal">
+            <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:640px;display:block;margin:0 auto;font-family:'Lexend',sans-serif">
+              <!-- Axes -->
+              <line x1="60" y1="360" x2="560" y2="360" stroke="#444" stroke-width="1.5"/>
+              <line x1="60" y1="360" x2="60" y2="30" stroke="#444" stroke-width="1.5"/>
+              <!-- Arrow heads -->
+              <polygon points="560,354 572,360 560,366" fill="#444"/>
+              <polygon points="54,30 60,18 66,30" fill="#444"/>
+              <!-- Axis labels -->
+              <text x="310" y="395" text-anchor="middle" font-size="12" fill="#999" letter-spacing="1">DESIGN QUALITY →</text>
+              <text x="22" y="200" text-anchor="middle" font-size="12" fill="#999" letter-spacing="1" transform="rotate(-90,22,200)">STORAGE FUNCTION →</text>
+              <!-- Quadrant dividers -->
+              <line x1="310" y1="30" x2="310" y2="360" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="60" y1="195" x2="560" y2="195" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="4 4"/>
+              <!-- Q labels -->
+              <text x="100" y="320" font-size="10" fill="#555">Storage / No Design</text>
+              <text x="340" y="320" font-size="10" fill="#555">Design / No Storage</text>
+              <text x="100" y="80" font-size="10" fill="#555">Utility / No Design</text>
+
+              <!-- Competitor dots -->
+              <!-- Wayfair storage chairs -->
+              <circle cx="120" cy="290" r="6" fill="#555"/>
+              <text x="132" y="294" font-size="11" fill="#777">Wayfair storage chairs</text>
+              <!-- Piano bench -->
+              <circle cx="100" cy="250" r="6" fill="#555"/>
+              <text x="112" y="254" font-size="11" fill="#777">Piano bench</text>
+              <!-- HAY About A Chair -->
+              <circle cx="430" cy="320" r="6" fill="#555"/>
+              <text x="442" y="324" font-size="11" fill="#777">HAY / Muuto</text>
+              <!-- Knoll -->
+              <circle cx="490" cy="310" r="6" fill="#555"/>
+              <text x="502" y="314" font-size="11" fill="#777">Knoll</text>
+              <!-- DWR -->
+              <circle cx="460" cy="330" r="6" fill="#555"/>
+              <!-- IKEA bench -->
+              <circle cx="115" cy="170" r="6" fill="#555"/>
+              <text x="127" y="174" font-size="11" fill="#777">IKEA bench</text>
+
+              <!-- ZAG Chair — the gap -->
+              <circle cx="430" cy="100" r="10" fill="#c1392b"/>
+              <text x="446" y="96" font-size="13" fill="#c1392b" font-weight="600">ZAG CHAIR</text>
+              <text x="446" y="112" font-size="11" fill="#c1392b">the gap</text>
+            </svg>
+            <p class="caption">The seating market leaves the top-right quadrant completely empty — design quality AND storage function in the same object.</p>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Who Buys This</h2>
+            <p>The target user applies kitchenware logic to furniture purchases: the object has to earn its place formally and functionally. They shop at CB2, HAY, Article, or Design Within Reach. They have books, a phone, a remote — small items that float around and never have a home. They'd buy a Le Creuset pot before a generic one, and they'd buy a considered chair before an inert one.</p>
+            <p>The secondary context is commercial: boutique hotels, co-working studios, gallery reading areas. The same product that works in a living room needs to read as intentional in a contract setting. The design-forward commercial market buys from the same tier as design-conscious homeowners — one object, two contexts.</p>
+          </div>
+
+          <div class="case-quote reveal">
+            <p>The gap isn't a feature gap — it's an argument gap. Nobody has decided that a storage shelf should be a formal consequence of a chair's geometry, not an apology beneath it.</p>
+          </div>
+        </div>
+
+        <!-- ── DEFINE ── -->
+        <div id="ch-define">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Define</span>
+            </div>
+            <span class="section-label-count">02 / 4</span>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>The Brief</h2>
+            <p>Solve comfort and storage simultaneously — not as separate features, but as a unified form. The brief pushed two constraints at once: the chair must seat a person and store items, and both functions must be legible from looking at the object. No hidden compartments. No bolted-on hardware. The storage is structural or it isn't there.</p>
+            <p>The ZAG name came from the geometry. The angular step in the side panel profile creates the undershelf as a consequence — not a decision made separately from the chair's form.</p>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Insight → Requirement</h2>
+            <p style="color:var(--muted);font-size:.95rem">Each requirement traces directly to a research finding. Nothing in the criteria list was assumed.</p>
+          </div>
+
+          <div class="insight-table reveal">
+            <div class="insight-row">
+              <div class="insight-cell">
+                <div class="insight-cell-label">Research Finding</div>
+                <p>Every storage chair hides its compartment — the storage is apologetic because the form can't justify it</p>
+              </div>
+              <div class="insight-cell req">
+                <div class="insight-cell-label">Design Requirement</div>
+                <p>Undershelf structurally integrated and open — accessible from the front, visible at a glance, no doors or drawers</p>
+              </div>
+            </div>
+            <div class="insight-row">
+              <div class="insight-cell">
+                <p>Design-forward chairs at $400–1500 use secondary bracing, hardware, or added structure to meet load requirements</p>
+              </div>
+              <div class="insight-cell req">
+                <p>The Z-profile carries load without secondary bracing — no corner brackets, no metal hardware visible from the primary view</p>
+              </div>
+            </div>
+            <div class="insight-row">
+              <div class="insight-cell">
+                <p>The target user applies kitchenware logic to furniture — material signals quality before any feature is legible</p>
+              </div>
+              <div class="insight-cell req">
+                <p>Primary material solid wood or laminated plywood — no upholstery on structural members; material is visible and honest</p>
+              </div>
+            </div>
+            <div class="insight-row">
+              <div class="insight-cell">
+                <p>Design-forward commercial buyers and design-conscious homeowners shop the same tier — one object, two contexts</p>
+              </div>
+              <div class="insight-cell req">
+                <p>Dual-context legibility — proportions and finish options must read as designed in both a living room and a contract setting</p>
+              </div>
+            </div>
+            <div class="insight-row">
+              <div class="insight-cell">
+                <p>3D printed parametric chairs are a real and growing category — the production story is part of the design narrative</p>
+              </div>
+              <div class="insight-cell req">
+                <p>Two production paths viable — CNC-milled wood and 3D-print bioplastic both achievable without redesigning the form</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── DEVELOP ── -->
+        <div id="ch-develop">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Develop</span>
+            </div>
+            <span class="section-label-count">03 / 4</span>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Direct to CAD</h2>
+            <p>This project skipped a sketch phase and went straight into Shapr3D. When the design logic is geometric — when the form is the argument — the fastest way to test it is to model it. Sketching a Z-profile doesn't tell you if the proportions work. Building it does.</p>
+            <p>The core formal decision happened early: two continuous side panels, each forming a Z-step profile when viewed from the side, connected by a seat platform, a storage shelf, and a back panel. The step in the Z is the shelf. No added mechanism. No drawer. The geometry resolves both problems at once.</p>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>The Z-Form Argument</h2>
+            <p>The side panel profile reads, from bottom to top: floor skid → front face → shelf platform → seat → back panel. The horizontal offset between the lower front face and the upper section is the storage surface. The angular step that creates the "Zag" silhouette is the same step that creates the undershelf.</p>
+            <p>This matters formally. A chair with a drawer has a drawer and a chair. The ZAG Chair has one object that is both. The storage isn't a consequence of the design — it is the design.</p>
+          </div>
+
+          <div class="case-img-full reveal">
+            <img src="../assets/images/zag-chair/studio-front.jpg" alt="ZAG Chair — studio render, 3/4 front view showing the Z-profile, undershelf with books, and dark fabric cushion">
+            <p class="caption">The undershelf is open and legible at a glance — no explanation required.</p>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Material</h2>
+            <p>Dark walnut stain on wood throughout the structural form. The material choice communicates quality before any feature is legible — walnut reads as craft-grade at residential and commercial scale. The seat uses a drop-in fabric cushion: contrasts with the wood, provides comfort without requiring the structural geometry to solve ergonomics separately.</p>
+            <p>The form is also a viable 3D print — CNC-laminated plywood and bioplastic FDM are both achievable without redesigning the profile. The production path is the secondary design story.</p>
+          </div>
+        </div>
+
+        <!-- ── DELIVER ── -->
+        <div id="ch-deliver">
+          <div class="section-label reveal">
+            <div class="section-label-l">
+              <span class="section-label-dot"></span>
+              <span class="section-label-text">Deliver</span>
+            </div>
+            <span class="section-label-count">04 / 4</span>
+          </div>
+
+          <div class="case-img-full reveal">
+            <img src="../assets/images/zag-chair/lifestyle-amber.jpg" alt="ZAG Chair — warm lifestyle render with amber background, chair alongside coffee table, book visible on undershelf">
+            <p class="caption">The chair in context — the undershelf reads immediately without staging or explanation.</p>
+          </div>
+
+          <div class="case-section reveal">
+            <h2>Constraint as Form-Giver</h2>
+            <p>ZAG was an exercise in letting the brief write the geometry. When you're solving two problems with one shape — comfort AND storage — you can't afford decorative moves. Every angle earns its place. The rounded corners aren't styling. The step in the profile isn't decoration. The form is the argument, and every element in it is load-bearing in both the structural and the rhetorical sense.</p>
+            <p>The result is a chair that reads as a designed object at a glance, stores what you actually leave on the floor, and doesn't apologize for either. That was the brief. That's the chair.</p>
+          </div>
+
+          <div class="case-img-2col reveal">
+            <div>
+              <img src="../assets/images/zag-chair/hero.jpg" alt="ZAG Chair — clean studio render, grey background, 3/4 view, book on shelf, dark walnut">
+              <p class="caption">Studio render — Z-profile and undershelf legible from the primary view</p>
+            </div>
+            <div>
+              <img src="../assets/images/zag-chair/lifestyle.jpg" alt="ZAG Chair — lifestyle render with coffee table, warm grey setting, books on undershelf">
+              <p class="caption">Lifestyle render — same object reads in a residential or commercial space</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.chapter-content -->
+    </div><!-- /.chapter-layout -->
+
+    <!-- Process grid -->
+    <div class="section-label reveal">
+      <div class="section-label-l">
+        <span class="section-label-dot"></span>
+        <span class="section-label-text">Process</span>
+      </div>
     </div>
 
-    <div class="case-img-full reveal">
-      <div class="placeholder" style="min-height:480px">ZAG Chair — Project Images</div>
+    <div class="case-process-grid reveal">
+      <div><img src="../assets/images/zag-chair/hero.jpg" alt="ZAG Chair — studio 3/4 render, dark walnut, book on undershelf"></div>
+      <div><img src="../assets/images/zag-chair/studio-front.jpg" alt="ZAG Chair — studio front render, Z-profile and cushion detail visible"></div>
+      <div><img src="../assets/images/zag-chair/lifestyle-amber.jpg" alt="ZAG Chair — lifestyle render, amber warm background, chair and coffee table"></div>
+      <div><img src="../assets/images/zag-chair/lifestyle.jpg" alt="ZAG Chair — lifestyle render, warm grey, coffee table, books on shelf"></div>
     </div>
 
     <!-- Case nav -->
@@ -104,7 +375,7 @@
       </a>
     </div>
 
-  </div>
+  </div><!-- /.case-wrap -->
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -139,8 +410,8 @@
         <div class="footer-col-label">Practice</div>
         <ul>
           <li>SolidWorks</li>
-          <li>KeyShot · GendoAI</li>
-          <li>CNC · 3D Printing</li>
+          <li>KeyShot</li>
+          <li>Shapr3D</li>
           <li>Rapid Prototyping</li>
         </ul>
       </div>
@@ -151,6 +422,11 @@
       <span>v.2026.05 — Rebuild</span>
     </div>
   </footer>
+
+  <div id="lb-overlay" aria-hidden="true">
+    <button id="lb-close" aria-label="Close">&#x2715;</button>
+    <img id="lb-img" src="" alt="">
+  </div>
 
   <script src="../script.js"></script>
 </body>
