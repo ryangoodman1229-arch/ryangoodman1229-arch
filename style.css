@@ -577,6 +577,9 @@ nav.top-nav.solid {
 .c-dog .card-img img {
   object-position: left bottom;
 }
+.c-zag .card-img img {
+  object-position: left top;
+}
 .project-card .card-img::after {
   content: '';
   position: absolute; inset: 0;
