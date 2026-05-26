@@ -580,6 +580,7 @@ nav.top-nav.solid {
 .c-zag .card-img img {
   object-position: left top;
 }
+.c-form5 .card-img { background: #ddd8d0; }
 .project-card .card-img::after {
   content: '';
   position: absolute; inset: 0;
@@ -995,6 +996,50 @@ footer.site-footer {
   .case-hero { height: 70svh; }
   .case-hero-overlay { left: 1.25rem; right: 1.25rem; bottom: 1.5rem; flex-direction: column; align-items: flex-start; }
   .case-hero-overlay .hero-side { text-align: left; }
+}
+
+/* Editorial hero — text-only, no image */
+.editorial-hero {
+  min-height: 88vh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 var(--pad-x) 4rem;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+.editorial-hero .eh-eyebrow {
+  font-family: var(--mono);
+  font-size: .6rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+.editorial-hero .eh-title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(4rem, 12vw, 10rem);
+  letter-spacing: -.045em;
+  line-height: .9;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 3rem;
+}
+.editorial-hero .eh-meta {
+  font-family: var(--mono);
+  font-size: .55rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--dim);
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 720px) {
+  .editorial-hero { padding: 0 1.25rem 2.5rem; min-height: 70svh; }
+  .editorial-hero .eh-title { font-size: clamp(3rem, 16vw, 5rem); }
+  .editorial-hero .eh-meta { flex-direction: column; gap: .75rem; }
 }
 
 /* Case study body width */
