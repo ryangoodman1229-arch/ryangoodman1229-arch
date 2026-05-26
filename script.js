@@ -115,15 +115,23 @@
     const submitBtn = form.querySelector('button[type="submit"]');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      if (!submitBtn) return;
-      submitBtn.textContent = '✓ Sent — Thanks';
-      submitBtn.disabled = true;
+      const name    = (form.querySelector('#name')?.value    || '').trim();
+      const email   = (form.querySelector('#email')?.value   || '').trim();
+      const company = (form.querySelector('#company')?.value || '').trim();
+      const message = (form.querySelector('#message')?.value || '').trim();
 
-      /* Fire to Formspree if action is set */
-      const action = form.getAttribute('action');
-      if (action && !action.includes('YOUR_FORM_ID')) {
-        const data = new FormData(form);
-        fetch(action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+      const subject = encodeURIComponent(`Portfolio Contact — ${name}`);
+      const body    = encodeURIComponent(
+        `From: ${name}\nEmail: ${email}${company ? '\nCompany: ' + company : ''}\n\n${message}`
+      );
+      window.open(
+        `https://mail.google.com/mail/?view=cm&to=ryangoodman1229@gmail.com&su=${subject}&body=${body}`,
+        '_blank'
+      );
+
+      if (submitBtn) {
+        submitBtn.textContent = '↗ Opening Gmail…';
+        submitBtn.disabled = true;
       }
     });
   }
